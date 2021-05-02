@@ -1,0 +1,6 @@
+*.vscode
+cpp 
+cpp-scripts
+py_scripts/*.py
+!py_scripts/LoRaGateway.py
+.editorconfig
