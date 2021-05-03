@@ -148,6 +148,10 @@ class LoRa(object):
         pass
 
     # Internal callbacks for add_events()
+    def reset_rx_ptr(self):
+        print("\033[93mReset rx pointer to base\033[0m")
+        self.set_mode(MODE.STDBY)
+        self.set_mode(MODE.RXCONT)
 
     def _dio0(self, channel):
         # DIO0 00: RxDone
