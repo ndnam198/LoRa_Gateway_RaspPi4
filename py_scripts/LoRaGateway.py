@@ -4,7 +4,6 @@ from myModules.data_format import *
 from myModules.colors import *
 
 from SX127x.LoRa import *
-# from SX127x.LoRaArgumentParser import LoRaArgumentParser
 from SX127x.board_config import BOARD
 import random
 import requests
@@ -14,9 +13,8 @@ import threading
 import queue
 import json
 
-# parser = LoRaArgumentParser("Lora tester")
-# SERVER_URL = 'ws://192.168.3.107:3001'
-SERVER_URL = 'ws://datn-loraserver.herokuapp.com:3001'
+# SERVER_URL = 'ws://localhost:3000'
+SERVER_URL = 'wss://datn-loraserver.herokuapp.com/pi'
 GATEWAY_ID = MSG.NODE_ID.GATEWAY
 
 
@@ -31,9 +29,10 @@ def thread_ping(*args):
     i = 0
     time.sleep(1)
     while True:
-        time.sleep(3)
+        time.sleep(10)
         try:
             i = i + 1
+            # pi_log_v('ping server')
             args[0].send("ping %d" % i)
         except Exception as e:
             pi_log_e('thread_ping')
@@ -45,13 +44,15 @@ def thread_reconnect(*args):
     """[summary]
         Try to reconnect to ws if lost connection
     """
+    i = 0
     while True:
         time.sleep(1)
         try:
-            pi_log_v('reconnecting')
+            i += 1
+            pi_log_v('reconnecting[%d]' % i)
             args[0].run_forever()
         except Exception as e:
-            pi_log_e('thread_reconnect')
+            pi_log_e('reconnect failed[%d]' % i)
             pi_log_e(e)
     pi_log_v("thread_reconnect terminating...")
 
@@ -87,11 +88,11 @@ class mylora(LoRa):
         # pi_log_v(self.__str__())
 
     def on_message(self, ws, stringifyJson):
-        pi_log_v('on_sock_msg')
         # if msg.find('pong') > -1:
         #     pass
         # else:
         msg = json.loads(stringifyJson.decode('utf-8'))
+        pi_log_v('on_sock_msg')
         pi_log_v(msg)
         loraMsg = [None] * 10
         loraMsg = REQUEST_PROTOTYPE
@@ -122,8 +123,8 @@ class mylora(LoRa):
                                          on_message=self.on_message,
                                          on_error=self.on_error,
                                          on_close=self.on_close)
-        # thread_1 = threading.Thread(target=thread_ping, args={self.ws})
-        # thread_1.start()
+        thread_1 = threading.Thread(target=thread_ping, args={self.ws})
+        thread_1.start()
         thread_2 = threading.Thread(target=thread_reconnect, args={self.ws})
         thread_2.start()
 
@@ -259,7 +260,7 @@ class mylora(LoRa):
         self.create_socket()
         self.set_mode(MODE.RXCONT)
         """ Start your code here """
-        self.cmd_polling()
+        # self.cmd_polling()
 
 
 if __name__ == "__main__":
