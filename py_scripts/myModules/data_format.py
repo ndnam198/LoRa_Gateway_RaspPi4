@@ -14,7 +14,7 @@ def add_lookup(cls):
 @add_lookup
 class MSG:
 
-    @add_lookup
+    # @add_lookup
     class INDEX:
         HEADER_SOURCE_ID = 0
         HEADER_DEST_ID = 1
@@ -22,10 +22,12 @@ class MSG:
         HEADER_MSG_STATUS = 3
         HEADER_SEQUENCE_ID = 4
         DATA_LOCATION = 5
+        DATA_MESH_NODE_ID = 5
         DATA_RELAY_STATE = 6
         DATA_ERR_CODE = 7
         COMMAND_OPCODE = 8
         RESET_CAUSE = 9
+        PACKET_RSSI = 9
         MAX = 10
 
     @add_lookup
@@ -79,6 +81,7 @@ class MSG:
             GIAI_PHONG_8 = 8
             GIAI_PHONG_9 = 9
             GIAI_PHONG_10 = 10
+            UNKNOWN_2 = 255
 
         @add_lookup
         class ERR_CODE:
@@ -111,6 +114,8 @@ class MSG:
             RESPOSNE_MCU_RESET = REQUEST_MCU_RESET + 100
             REQUEST_LOCATION_UPDATE = 4
             RESPOSNE_LOCATION_UPDATE = REQUEST_LOCATION_UPDATE + 100
+            REQUEST_MESH_NODE_ID_UPDATE = 5
+            RESPONSE_MESH_NODE_ID_UPDATE = REQUEST_LOCATION_UPDATE + 100
 
 REQUEST_PROTOTYPE = [
     MSG.NODE_ID.GATEWAY,

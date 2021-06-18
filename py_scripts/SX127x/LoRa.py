@@ -578,6 +578,9 @@ class LoRa(object):
 
     def set_spreading_factor(self, spreading_factor):
         self.set_modem_config_2(spreading_factor=spreading_factor)
+        if spreading_factor == 6:
+            self.set_detect_optimize(0x05)
+            self.set_detection_threshold(0x0C)
 
     def set_rx_crc(self, rx_crc):
         self.set_modem_config_2(rx_crc=rx_crc)
