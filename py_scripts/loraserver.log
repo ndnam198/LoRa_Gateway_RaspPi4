@@ -1,5 +1,5 @@
-[[95m2021-05-05 01:45:53.225520[0m] LoRaGateWay Start
-[[95m2021-05-05 01:45:53.646360[0m] start lora config
+[[95m2021-06-18 23:54:39.187612[0m] LoRaGateWay Start
+[[95m2021-06-18 23:54:39.608489[0m] start lora config
 [93mLoRa -> SLEEP[0m
 [93mLoRa -> FSK_STDBY[0m
 [93mLoRa -> SLEEP[0m
@@ -7,1472 +7,602 @@
 [93mLoRa -> STDBY[0m
 [93mLoRa -> STDBY[0m
 [93mLoRa -> STDBY[0m
-[[95m2021-05-05 01:45:53.733343[0m] create websocket
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:45:53.734330[0m] [94mcurrent active thread 3[0m
-[[95m2021-05-05 01:45:54.740052[0m] reconnecting[1]
-[[95m2021-05-05 01:45:56.073038[0m] on_sock_open
-[[95m2021-05-05 01:45:56.073095[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 01:47:11.953099[0m] on_sock_msg
-[[95m2021-05-05 01:47:11.953154[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 1, 'timestamp': 1620154016, 'opcode': 2}
-[[95m2021-05-05 01:47:11.953221[0m] LoRa transmit:
-[[95m2021-05-05 01:47:11.953244[0m] [92m[255, 20, 0, 0, 2, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:11.953704[0m] wait for tx_done
-[[95m2021-05-05 01:47:11.974519[0m] [92msend ok after 168[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:14.111493[0m] on_sock_msg
-[[95m2021-05-05 01:47:14.111545[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 2, 'timestamp': 1620154018, 'opcode': 2}
-[[95m2021-05-05 01:47:14.111600[0m] LoRa transmit:
-[[95m2021-05-05 01:47:14.111621[0m] [92m[255, 20, 0, 0, 3, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:14.112061[0m] wait for tx_done
-[[95m2021-05-05 01:47:14.132878[0m] [92msend ok after 169[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:17.146106[0m] on_sock_msg
-[[95m2021-05-05 01:47:17.146160[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 3, 'timestamp': 1620154021, 'opcode': 2}
-[[95m2021-05-05 01:47:17.146213[0m] LoRa transmit:
-[[95m2021-05-05 01:47:17.146253[0m] [92m[255, 19, 0, 0, 4, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:17.146734[0m] wait for tx_done
-[[95m2021-05-05 01:47:17.167515[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:19.450891[0m] on_sock_msg
-[[95m2021-05-05 01:47:19.450945[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 4, 'timestamp': 1620154024, 'opcode': 2}
-[[95m2021-05-05 01:47:19.450999[0m] LoRa transmit:
-[[95m2021-05-05 01:47:19.451021[0m] [92m[255, 18, 0, 0, 5, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:19.451521[0m] wait for tx_done
-[[95m2021-05-05 01:47:19.472344[0m] [92msend ok after 149[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:19.929962[0m] ---> RxDone
-[[95m2021-05-05 01:47:19.930195[0m] RSSI: -112 - PKT_RSSI: -68
-[[95m2021-05-05 01:47:19.930548[0m] LoRa receive: 
-[[95m2021-05-05 01:47:19.930605[0m] [18, 255, 'RESPONSE', 'OK', 5, 'GIAI_PHONG_1', 'ON', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:47:19.930656[0m] Pi send server: 
-[[95m2021-05-05 01:47:19.930678[0m] [92m18.255.RESPONSE.OK.5.GIAI_PHONG_1.ON.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:23.953394[0m] on_sock_msg
-[[95m2021-05-05 01:47:23.953448[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'off', 'sequenceID': 5, 'timestamp': 1620154028, 'opcode': 2}
-[[95m2021-05-05 01:47:23.953502[0m] LoRa transmit:
-[[95m2021-05-05 01:47:23.953523[0m] [92m[255, 18, 0, 0, 6, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:23.954022[0m] wait for tx_done
-[[95m2021-05-05 01:47:23.974818[0m] [92msend ok after 146[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:24.465743[0m] ---> RxDone
-[[95m2021-05-05 01:47:24.465949[0m] RSSI: -113 - PKT_RSSI: -68
-[[95m2021-05-05 01:47:24.466348[0m] LoRa receive: 
-[[95m2021-05-05 01:47:24.466391[0m] [18, 255, 'RESPONSE', 'OK', 6, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:47:24.466440[0m] Pi send server: 
-[[95m2021-05-05 01:47:24.466463[0m] [92m18.255.RESPONSE.OK.6.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:25.711824[0m] on_sock_msg
-[[95m2021-05-05 01:47:25.711875[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 6, 'timestamp': 1620154030, 'opcode': 2}
-[[95m2021-05-05 01:47:25.711928[0m] LoRa transmit:
-[[95m2021-05-05 01:47:25.711949[0m] [92m[255, 18, 0, 0, 7, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:25.712443[0m] wait for tx_done
-[[95m2021-05-05 01:47:25.733250[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:27.860953[0m] on_sock_msg
-[[95m2021-05-05 01:47:27.861004[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 7, 'timestamp': 1620154032, 'opcode': 2}
-[[95m2021-05-05 01:47:27.861057[0m] LoRa transmit:
-[[95m2021-05-05 01:47:27.861079[0m] [92m[255, 18, 0, 0, 8, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:27.861576[0m] wait for tx_done
-[[95m2021-05-05 01:47:27.882394[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:29.675149[0m] on_sock_msg
-[[95m2021-05-05 01:47:29.675201[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 8, 'timestamp': 1620154034, 'opcode': 2}
-[[95m2021-05-05 01:47:29.675253[0m] LoRa transmit:
-[[95m2021-05-05 01:47:29.675275[0m] [92m[255, 18, 0, 0, 9, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:29.675767[0m] wait for tx_done
-[[95m2021-05-05 01:47:29.696604[0m] [92msend ok after 146[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:30.569411[0m] on_sock_msg
-[[95m2021-05-05 01:47:30.569458[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'off', 'sequenceID': 9, 'timestamp': 1620154035, 'opcode': 2}
-[[95m2021-05-05 01:47:30.569509[0m] LoRa transmit:
-[[95m2021-05-05 01:47:30.569530[0m] [92m[255, 18, 0, 0, 10, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:30.570021[0m] wait for tx_done
-[[95m2021-05-05 01:47:30.590829[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:31.310361[0m] on_sock_msg
-[[95m2021-05-05 01:47:31.310414[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 10, 'timestamp': 1620154035, 'opcode': 2}
-[[95m2021-05-05 01:47:31.310466[0m] LoRa transmit:
-[[95m2021-05-05 01:47:31.310487[0m] [92m[255, 20, 0, 0, 11, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:31.310979[0m] wait for tx_done
-[[95m2021-05-05 01:47:31.331806[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:31.664441[0m] on_sock_msg
-[[95m2021-05-05 01:47:31.664489[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 11, 'timestamp': 1620154036, 'opcode': 2}
-[[95m2021-05-05 01:47:31.664541[0m] LoRa transmit:
-[[95m2021-05-05 01:47:31.664580[0m] [92m[255, 20, 0, 0, 12, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:31.665071[0m] wait for tx_done
-[[95m2021-05-05 01:47:31.685861[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:31.926020[0m] on_sock_msg
-[[95m2021-05-05 01:47:31.926069[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 12, 'timestamp': 1620154036, 'opcode': 2}
-[[95m2021-05-05 01:47:31.934176[0m] LoRa transmit:
-[[95m2021-05-05 01:47:31.934229[0m] [92m[255, 20, 0, 0, 13, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:31.934782[0m] wait for tx_done
-[[95m2021-05-05 01:47:31.955582[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:32.180997[0m] on_sock_msg
-[[95m2021-05-05 01:47:32.181049[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 13, 'timestamp': 1620154036, 'opcode': 2}
-[[95m2021-05-05 01:47:32.181102[0m] LoRa transmit:
-[[95m2021-05-05 01:47:32.181124[0m] [92m[255, 20, 0, 0, 14, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:32.181616[0m] wait for tx_done
-[[95m2021-05-05 01:47:32.202425[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:32.437119[0m] on_sock_msg
-[[95m2021-05-05 01:47:32.437169[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 14, 'timestamp': 1620154036, 'opcode': 2}
-[[95m2021-05-05 01:47:32.437220[0m] LoRa transmit:
-[[95m2021-05-05 01:47:32.437241[0m] [92m[255, 20, 0, 0, 15, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:32.437753[0m] wait for tx_done
-[[95m2021-05-05 01:47:32.458596[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:32.695246[0m] on_sock_msg
-[[95m2021-05-05 01:47:32.695297[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 15, 'timestamp': 1620154037, 'opcode': 2}
-[[95m2021-05-05 01:47:32.695349[0m] LoRa transmit:
-[[95m2021-05-05 01:47:32.695369[0m] [92m[255, 20, 0, 0, 16, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:32.695864[0m] wait for tx_done
-[[95m2021-05-05 01:47:32.716701[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:33.447698[0m] on_sock_msg
-[[95m2021-05-05 01:47:33.447753[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 16, 'timestamp': 1620154038, 'opcode': 2}
-[[95m2021-05-05 01:47:33.447810[0m] LoRa transmit:
-[[95m2021-05-05 01:47:33.447832[0m] [92m[255, 20, 0, 0, 17, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:33.448189[0m] wait for tx_done
-[[95m2021-05-05 01:47:33.471778[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:33.708993[0m] on_sock_msg
-[[95m2021-05-05 01:47:33.709042[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 17, 'timestamp': 1620154038, 'opcode': 2}
-[[95m2021-05-05 01:47:33.709094[0m] LoRa transmit:
-[[95m2021-05-05 01:47:33.709118[0m] [92m[255, 20, 0, 0, 18, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:33.709608[0m] wait for tx_done
-[[95m2021-05-05 01:47:33.730400[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:33.963371[0m] on_sock_msg
-[[95m2021-05-05 01:47:33.963423[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 18, 'timestamp': 1620154038, 'opcode': 2}
-[[95m2021-05-05 01:47:33.963476[0m] LoRa transmit:
-[[95m2021-05-05 01:47:33.963497[0m] [92m[255, 20, 0, 0, 19, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:33.963994[0m] wait for tx_done
-[[95m2021-05-05 01:47:33.984805[0m] [92msend ok after 145[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:34.221429[0m] on_sock_msg
-[[95m2021-05-05 01:47:34.221476[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 19, 'timestamp': 1620154038, 'opcode': 2}
-[[95m2021-05-05 01:47:34.221526[0m] LoRa transmit:
-[[95m2021-05-05 01:47:34.221548[0m] [92m[255, 20, 0, 0, 20, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:34.222032[0m] wait for tx_done
-[[95m2021-05-05 01:47:34.242828[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:35.207688[0m] on_sock_msg
-[[95m2021-05-05 01:47:35.207739[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 20, 'timestamp': 1620154039, 'opcode': 2}
-[[95m2021-05-05 01:47:35.207793[0m] LoRa transmit:
-[[95m2021-05-05 01:47:35.207815[0m] [92m[255, 20, 0, 0, 21, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:35.208308[0m] wait for tx_done
-[[95m2021-05-05 01:47:35.229116[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:35.501289[0m] on_sock_msg
-[[95m2021-05-05 01:47:35.501340[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 21, 'timestamp': 1620154040, 'opcode': 2}
-[[95m2021-05-05 01:47:35.501390[0m] LoRa transmit:
-[[95m2021-05-05 01:47:35.501411[0m] [92m[255, 20, 0, 0, 22, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:35.501898[0m] wait for tx_done
-[[95m2021-05-05 01:47:35.522693[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:36.335504[0m] on_sock_msg
-[[95m2021-05-05 01:47:36.335555[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 22, 'timestamp': 1620154040, 'opcode': 2}
-[[95m2021-05-05 01:47:36.335607[0m] LoRa transmit:
-[[95m2021-05-05 01:47:36.335629[0m] [92m[255, 20, 0, 0, 23, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:36.336122[0m] wait for tx_done
-[[95m2021-05-05 01:47:36.356965[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:36.642151[0m] ---> RxDone
-[[95m2021-05-05 01:47:36.642354[0m] RSSI: -113 - PKT_RSSI: -68
-[[95m2021-05-05 01:47:36.642743[0m] LoRa receive: 
-[[95m2021-05-05 01:47:36.642783[0m] [18, 255, 'RESPONSE', 'FAILED', 8, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:47:36.642832[0m] Pi send server: 
-[[95m2021-05-05 01:47:36.642853[0m] [92m18.255.RESPONSE.FAILED.8.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:50.347793[0m] on_sock_msg
-[[95m2021-05-05 01:47:50.347847[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 23, 'timestamp': 1620154054, 'opcode': 2}
-[[95m2021-05-05 01:47:50.347901[0m] LoRa transmit:
-[[95m2021-05-05 01:47:50.347923[0m] [92m[255, 20, 0, 0, 24, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:50.348275[0m] wait for tx_done
-[[95m2021-05-05 01:47:50.369132[0m] [92msend ok after 158[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:50.750333[0m] on_sock_msg
-[[95m2021-05-05 01:47:50.750383[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 24, 'timestamp': 1620154055, 'opcode': 2}
-[[95m2021-05-05 01:47:50.750433[0m] LoRa transmit:
-[[95m2021-05-05 01:47:50.750454[0m] [92m[255, 20, 0, 0, 25, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:50.750945[0m] wait for tx_done
-[[95m2021-05-05 01:47:50.771734[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:50.988684[0m] on_sock_msg
-[[95m2021-05-05 01:47:50.988735[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 25, 'timestamp': 1620154055, 'opcode': 2}
-[[95m2021-05-05 01:47:50.988786[0m] LoRa transmit:
-[[95m2021-05-05 01:47:50.988806[0m] [92m[255, 20, 0, 0, 26, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:50.998795[0m] wait for tx_done
-[[95m2021-05-05 01:47:51.019613[0m] [92msend ok after 143[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:51.220537[0m] on_sock_msg
-[[95m2021-05-05 01:47:51.220588[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 26, 'timestamp': 1620154055, 'opcode': 2}
-[[95m2021-05-05 01:47:51.220641[0m] LoRa transmit:
-[[95m2021-05-05 01:47:51.220663[0m] [92m[255, 20, 0, 0, 27, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:51.221151[0m] wait for tx_done
-[[95m2021-05-05 01:47:51.241961[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:47:51.556183[0m] on_sock_msg
-[[95m2021-05-05 01:47:51.556229[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 27, 'timestamp': 1620154056, 'opcode': 2}
-[[95m2021-05-05 01:47:51.556281[0m] LoRa transmit:
-[[95m2021-05-05 01:47:51.556302[0m] [92m[255, 19, 0, 0, 28, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:47:51.556790[0m] wait for tx_done
-[[95m2021-05-05 01:47:51.577620[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:48:00.137738[0m] ---> RxDone
-[[95m2021-05-05 01:48:00.137918[0m] RSSI: -115 - PKT_RSSI: -41
-[[95m2021-05-05 01:48:00.138197[0m] LoRa receive: 
-[[95m2021-05-05 01:48:00.138240[0m] [19, 255, 'RESPONSE', 'FAILED', 28, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:48:00.138292[0m] Pi send server: 
-[[95m2021-05-05 01:48:00.138313[0m] [92m19.255.RESPONSE.FAILED.28.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:48:31.993438[0m] on_sock_msg
-[[95m2021-05-05 01:48:31.993492[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 28, 'timestamp': 1620154096, 'opcode': 2}
-[[95m2021-05-05 01:48:31.993545[0m] LoRa transmit:
-[[95m2021-05-05 01:48:31.993569[0m] [92m[255, 20, 0, 0, 29, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:48:31.994068[0m] wait for tx_done
-[[95m2021-05-05 01:48:32.014849[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:48:52.606299[0m] on_sock_msg
-[[95m2021-05-05 01:48:52.606353[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 29, 'timestamp': 1620154117, 'opcode': 2}
-[[95m2021-05-05 01:48:52.606405[0m] LoRa transmit:
-[[95m2021-05-05 01:48:52.606427[0m] [92m[255, 20, 0, 0, 30, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:48:52.606778[0m] wait for tx_done
-[[95m2021-05-05 01:48:52.627575[0m] [92msend ok after 172[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:48:57.470571[0m] on_sock_msg
-[[95m2021-05-05 01:48:57.470626[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 30, 'timestamp': 1620154122, 'opcode': 2}
-[[95m2021-05-05 01:48:57.470680[0m] LoRa transmit:
-[[95m2021-05-05 01:48:57.470702[0m] [92m[255, 19, 0, 0, 31, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:48:57.471129[0m] wait for tx_done
-[[95m2021-05-05 01:48:57.491976[0m] [92msend ok after 170[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:49:03.026586[0m] on_sock_msg
-[[95m2021-05-05 01:49:03.026639[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 31, 'timestamp': 1620154127, 'opcode': 2}
-[[95m2021-05-05 01:49:03.026693[0m] LoRa transmit:
-[[95m2021-05-05 01:49:03.026715[0m] [92m[255, 18, 0, 0, 32, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:49:03.027165[0m] wait for tx_done
-[[95m2021-05-05 01:49:03.048004[0m] [92msend ok after 180[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:49:06.063990[0m] ---> RxDone
-[[95m2021-05-05 01:49:06.064199[0m] RSSI: -112 - PKT_RSSI: -42
-[[95m2021-05-05 01:49:06.064554[0m] LoRa receive: 
-[[95m2021-05-05 01:49:06.064597[0m] [19, 255, 'RESPONSE', 'FAILED', 31, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:49:06.064650[0m] Pi send server: 
-[[95m2021-05-05 01:49:06.064672[0m] [92m19.255.RESPONSE.FAILED.31.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:49:06.171638[0m] on_sock_msg
-[[95m2021-05-05 01:49:06.171686[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 32, 'timestamp': 1620154130, 'opcode': 2}
-[[95m2021-05-05 01:49:06.171738[0m] LoRa transmit:
-[[95m2021-05-05 01:49:06.171760[0m] [92m[255, 20, 0, 0, 33, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:49:06.172266[0m] wait for tx_done
-[[95m2021-05-05 01:49:06.193069[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:49:08.759371[0m] on_sock_msg
-[[95m2021-05-05 01:49:08.759423[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 33, 'timestamp': 1620154133, 'opcode': 2}
-[[95m2021-05-05 01:49:08.759476[0m] LoRa transmit:
-[[95m2021-05-05 01:49:08.759498[0m] [92m[255, 20, 0, 0, 34, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:49:08.759849[0m] wait for tx_done
-[[95m2021-05-05 01:49:08.780702[0m] [92msend ok after 182[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:49:10.445953[0m] on_sock_msg
-[[95m2021-05-05 01:49:10.446004[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'on', 'sequenceID': 34, 'timestamp': 1620154135, 'opcode': 2}
-[[95m2021-05-05 01:49:10.446054[0m] LoRa transmit:
-[[95m2021-05-05 01:49:10.446076[0m] [92m[255, 20, 0, 0, 35, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:49:10.446568[0m] wait for tx_done
-[[95m2021-05-05 01:49:10.467400[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:49:11.808202[0m] ---> RxDone
-[[95m2021-05-05 01:49:11.808408[0m] RSSI: -111 - PKT_RSSI: -66
-[[95m2021-05-05 01:49:11.808770[0m] LoRa receive: 
-[[95m2021-05-05 01:49:11.808814[0m] [18, 255, 'RESPONSE', 'FAILED', 32, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:49:11.808866[0m] Pi send server: 
-[[95m2021-05-05 01:49:11.808887[0m] [92m18.255.RESPONSE.FAILED.32.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:49:12.572912[0m] on_sock_msg
-[[95m2021-05-05 01:49:12.572964[0m] {'source': 'browser', 'type': 'control', 'nodeID': '20', 'status': 'off', 'sequenceID': 35, 'timestamp': 1620154137, 'opcode': 2}
-[[95m2021-05-05 01:49:12.573016[0m] LoRa transmit:
-[[95m2021-05-05 01:49:12.573038[0m] [92m[255, 20, 0, 0, 36, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:49:12.573530[0m] wait for tx_done
-[[95m2021-05-05 01:49:12.594372[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:49:29.441965[0m] on_sock_msg
-[[95m2021-05-05 01:49:29.442018[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'off', 'sequenceID': 36, 'timestamp': 1620154154, 'opcode': 2}
-[[95m2021-05-05 01:49:29.442072[0m] LoRa transmit:
-[[95m2021-05-05 01:49:29.442094[0m] [92m[255, 19, 0, 0, 37, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:49:29.448319[0m] wait for tx_done
-[[95m2021-05-05 01:49:29.469139[0m] [92msend ok after 160[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:49:29.919376[0m] ---> RxDone
-[[95m2021-05-05 01:49:29.919588[0m] RSSI: -109 - PKT_RSSI: -48
-[[95m2021-05-05 01:49:29.919986[0m] LoRa receive: 
-[[95m2021-05-05 01:49:29.920028[0m] [19, 255, 'RESPONSE', 'OK', 37, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:49:29.920078[0m] Pi send server: 
-[[95m2021-05-05 01:49:29.920099[0m] [92m19.255.RESPONSE.OK.37.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:52:39.326965[0m] [91mon_sock_error[0m
-[[95m2021-05-05 01:52:39.327029[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 01:52:39.327253[0m] on_sock_close
-[[95m2021-05-05 01:52:40.333446[0m] reconnecting[2]
-[[95m2021-05-05 01:52:48.583208[0m] on_sock_open
-[[95m2021-05-05 01:52:48.583262[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 01:53:17.086576[0m] on_sock_msg
-[[95m2021-05-05 01:53:17.086629[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 1, 'timestamp': 1620154381, 'opcode': 2}
-[[95m2021-05-05 01:53:17.086684[0m] LoRa transmit:
-[[95m2021-05-05 01:53:17.086707[0m] [92m[255, 18, 0, 0, 38, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:53:17.087151[0m] wait for tx_done
-[[95m2021-05-05 01:53:17.107964[0m] [92msend ok after 168[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:53:25.870682[0m] ---> RxDone
-[[95m2021-05-05 01:53:25.870848[0m] RSSI: -113 - PKT_RSSI: -64
-[[95m2021-05-05 01:53:25.871120[0m] LoRa receive: 
-[[95m2021-05-05 01:53:25.871164[0m] [18, 255, 'RESPONSE', 'FAILED', 38, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:53:25.871214[0m] Pi send server: 
-[[95m2021-05-05 01:53:25.871235[0m] [92m18.255.RESPONSE.FAILED.38.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:53:37.406741[0m] on_sock_msg
-[[95m2021-05-05 01:53:37.406798[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 2, 'timestamp': 1620154402, 'opcode': 2}
-[[95m2021-05-05 01:53:37.406852[0m] LoRa transmit:
-[[95m2021-05-05 01:53:37.406873[0m] [92m[255, 18, 0, 0, 39, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:53:37.407322[0m] wait for tx_done
-[[95m2021-05-05 01:53:37.428156[0m] [92msend ok after 166[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:53:41.393538[0m] ---> RxDone
-[[95m2021-05-05 01:53:41.393715[0m] RSSI: -112 - PKT_RSSI: -59
-[[95m2021-05-05 01:53:41.393993[0m] LoRa receive: 
-[[95m2021-05-05 01:53:41.394035[0m] [18, 255, 'RESPONSE', 'OK', 39, 'GIAI_PHONG_1', 'ON', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:53:41.394084[0m] Pi send server: 
-[[95m2021-05-05 01:53:41.394105[0m] [92m18.255.RESPONSE.OK.39.GIAI_PHONG_1.ON.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:53:49.452019[0m] on_sock_msg
-[[95m2021-05-05 01:53:49.452074[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 3, 'timestamp': 1620154414, 'opcode': 2}
-[[95m2021-05-05 01:53:49.452127[0m] LoRa transmit:
-[[95m2021-05-05 01:53:49.452149[0m] [92m[255, 19, 0, 0, 40, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:53:49.452600[0m] wait for tx_done
-[[95m2021-05-05 01:53:49.473391[0m] [92msend ok after 169[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:53:51.060177[0m] ---> RxDone
-[[95m2021-05-05 01:53:51.060331[0m] RSSI: -115 - PKT_RSSI: -49
-[[95m2021-05-05 01:53:51.060602[0m] LoRa receive: 
-[[95m2021-05-05 01:53:51.060642[0m] [19, 255, 'RESPONSE', 'OK', 40, 'GIAI_PHONG_1', 'ON', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:53:51.060689[0m] Pi send server: 
-[[95m2021-05-05 01:53:51.060712[0m] [92m19.255.RESPONSE.OK.40.GIAI_PHONG_1.ON.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:53:52.742757[0m] ---> RxDone
-[[95m2021-05-05 01:53:52.742956[0m] RSSI: -112 - PKT_RSSI: -115
-[[95m2021-05-05 01:53:52.743347[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:53:55.190742[0m] on_sock_msg
-[[95m2021-05-05 01:53:55.190795[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'off', 'sequenceID': 4, 'timestamp': 1620154419, 'opcode': 2}
-[[95m2021-05-05 01:53:55.190848[0m] LoRa transmit:
-[[95m2021-05-05 01:53:55.190870[0m] [92m[255, 19, 0, 0, 41, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:53:55.191310[0m] wait for tx_done
-[[95m2021-05-05 01:53:55.212142[0m] [92msend ok after 169[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:53:55.694517[0m] ---> RxDone
-[[95m2021-05-05 01:53:55.694717[0m] RSSI: -115 - PKT_RSSI: -49
-[[95m2021-05-05 01:53:55.695108[0m] LoRa receive: 
-[[95m2021-05-05 01:53:55.695150[0m] [19, 255, 'RESPONSE', 'OK', 41, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:53:55.695196[0m] Pi send server: 
-[[95m2021-05-05 01:53:55.695216[0m] [92m19.255.RESPONSE.OK.41.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:54:53.950447[0m] on_sock_msg
-[[95m2021-05-05 01:54:53.950502[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 5, 'timestamp': 1620154478, 'opcode': 2}
-[[95m2021-05-05 01:54:53.950555[0m] LoRa transmit:
-[[95m2021-05-05 01:54:53.950577[0m] [92m[255, 18, 0, 0, 42, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 01:54:53.950956[0m] wait for tx_done
-[[95m2021-05-05 01:54:53.971798[0m] [92msend ok after 181[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 01:54:54.429926[0m] ---> RxDone
-[[95m2021-05-05 01:54:54.430138[0m] RSSI: -115 - PKT_RSSI: -64
-[[95m2021-05-05 01:54:54.430531[0m] LoRa receive: 
-[[95m2021-05-05 01:54:54.430573[0m] [18, 255, 'RESPONSE', 'OK', 42, 'GIAI_PHONG_1', 'ON', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 01:54:54.430624[0m] Pi send server: 
-[[95m2021-05-05 01:54:54.430644[0m] [92m18.255.RESPONSE.OK.42.GIAI_PHONG_1.ON.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:01:01.802173[0m] on_sock_msg
-[[95m2021-05-05 02:01:01.802225[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'off', 'sequenceID': 6, 'timestamp': 1620154846, 'opcode': 2}
-[[95m2021-05-05 02:01:01.802281[0m] LoRa transmit:
-[[95m2021-05-05 02:01:01.802303[0m] [92m[255, 18, 0, 0, 43, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:01:01.802687[0m] wait for tx_done
-[[95m2021-05-05 02:01:01.823516[0m] [92msend ok after 181[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:01:02.313756[0m] ---> RxDone
-[[95m2021-05-05 02:01:02.313937[0m] RSSI: -113 - PKT_RSSI: -61
-[[95m2021-05-05 02:01:02.319672[0m] LoRa receive: 
-[[95m2021-05-05 02:01:02.319720[0m] [18, 255, 'RESPONSE', 'OK', 43, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:01:02.319770[0m] Pi send server: 
-[[95m2021-05-05 02:01:02.319792[0m] [92m18.255.RESPONSE.OK.43.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:14:54.520389[0m] on_sock_msg
-[[95m2021-05-05 02:14:54.520444[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 1, 'timestamp': 1620155693, 'opcode': 2}
-[[95m2021-05-05 02:14:54.520499[0m] LoRa transmit:
-[[95m2021-05-05 02:14:54.520521[0m] [92m[255, 18, 0, 0, 44, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:14:54.520915[0m] wait for tx_done
-[[95m2021-05-05 02:14:54.541735[0m] [92msend ok after 181[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:14:59.862691[0m] on_sock_msg
-[[95m2021-05-05 02:14:59.862742[0m] {'nodeID': 18, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:14:59.862790[0m] LoRa transmit:
-[[95m2021-05-05 02:14:59.862811[0m] [92m[255, 18, 0, 0, 45, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:14:59.863305[0m] wait for tx_done
-[[95m2021-05-05 02:14:59.884123[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:14:59.999996[0m] on_sock_msg
-[[95m2021-05-05 02:15:00.000028[0m] {'nodeID': 19, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:00.000068[0m] LoRa transmit:
-[[95m2021-05-05 02:15:00.000090[0m] [92m[255, 19, 0, 0, 46, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:00.000562[0m] wait for tx_done
-[[95m2021-05-05 02:15:00.021356[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:00.137184[0m] on_sock_msg
-[[95m2021-05-05 02:15:00.137216[0m] {'nodeID': 20, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:00.137255[0m] LoRa transmit:
-[[95m2021-05-05 02:15:00.137276[0m] [92m[255, 20, 0, 0, 47, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:00.137766[0m] wait for tx_done
-[[95m2021-05-05 02:15:00.158555[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:00.269432[0m] on_sock_msg
-[[95m2021-05-05 02:15:00.269476[0m] {'nodeID': 21, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:00.269521[0m] LoRa transmit:
-[[95m2021-05-05 02:15:00.269544[0m] [92m[255, 21, 0, 0, 48, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:00.270020[0m] wait for tx_done
-[[95m2021-05-05 02:15:00.290817[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:03.300547[0m] ---> RxDone
-[[95m2021-05-05 02:15:03.300758[0m] RSSI: -117 - PKT_RSSI: -68
-[[95m2021-05-05 02:15:03.301151[0m] LoRa receive: 
-[[95m2021-05-05 02:15:03.301192[0m] [18, 255, 'RESPONSE', 'FAILED', 44, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:15:03.301242[0m] Pi send server: 
-[[95m2021-05-05 02:15:03.301263[0m] [92m18.255.RESPONSE.FAILED.44.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:05.172761[0m] on_sock_msg
-[[95m2021-05-05 02:15:05.172805[0m] {'nodeID': 18, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:05.172850[0m] LoRa transmit:
-[[95m2021-05-05 02:15:05.172871[0m] [92m[255, 18, 0, 0, 49, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:05.173354[0m] wait for tx_done
-[[95m2021-05-05 02:15:05.194166[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:05.310165[0m] on_sock_msg
-[[95m2021-05-05 02:15:05.310204[0m] {'nodeID': 19, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:05.310249[0m] LoRa transmit:
-[[95m2021-05-05 02:15:05.310270[0m] [92m[255, 19, 0, 0, 50, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:05.310746[0m] wait for tx_done
-[[95m2021-05-05 02:15:05.331548[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:05.447421[0m] on_sock_msg
-[[95m2021-05-05 02:15:05.447458[0m] {'nodeID': 20, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:05.447499[0m] LoRa transmit:
-[[95m2021-05-05 02:15:05.447520[0m] [92m[255, 20, 0, 0, 51, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:05.448015[0m] wait for tx_done
-[[95m2021-05-05 02:15:05.468821[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:05.584680[0m] on_sock_msg
-[[95m2021-05-05 02:15:05.584714[0m] {'nodeID': 21, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:05.584755[0m] LoRa transmit:
-[[95m2021-05-05 02:15:05.584776[0m] [92m[255, 21, 0, 0, 52, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:05.585247[0m] wait for tx_done
-[[95m2021-05-05 02:15:05.606086[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:08.171053[0m] on_sock_msg
-[[95m2021-05-05 02:15:08.171108[0m] {'nodeID': 18, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:08.171156[0m] LoRa transmit:
-[[95m2021-05-05 02:15:08.171179[0m] [92m[255, 18, 0, 0, 53, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:08.171525[0m] wait for tx_done
-[[95m2021-05-05 02:15:08.192378[0m] [92msend ok after 182[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:08.308296[0m] on_sock_msg
-[[95m2021-05-05 02:15:08.308337[0m] {'nodeID': 19, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:08.308379[0m] LoRa transmit:
-[[95m2021-05-05 02:15:08.308400[0m] [92m[255, 19, 0, 0, 54, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:08.308874[0m] wait for tx_done
-[[95m2021-05-05 02:15:08.329682[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:08.445568[0m] on_sock_msg
-[[95m2021-05-05 02:15:08.445606[0m] {'nodeID': 20, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:08.445646[0m] LoRa transmit:
-[[95m2021-05-05 02:15:08.445667[0m] [92m[255, 20, 0, 0, 55, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:08.446144[0m] wait for tx_done
-[[95m2021-05-05 02:15:08.466929[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:08.582790[0m] on_sock_msg
-[[95m2021-05-05 02:15:08.582823[0m] {'nodeID': 21, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:08.582863[0m] LoRa transmit:
-[[95m2021-05-05 02:15:08.582883[0m] [92m[255, 21, 0, 0, 56, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:08.583353[0m] wait for tx_done
-[[95m2021-05-05 02:15:08.604186[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:12.938494[0m] on_sock_msg
-[[95m2021-05-05 02:15:12.938549[0m] {'nodeID': 18, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:12.938598[0m] LoRa transmit:
-[[95m2021-05-05 02:15:12.938620[0m] [92m[255, 18, 0, 0, 57, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:12.939114[0m] wait for tx_done
-[[95m2021-05-05 02:15:12.959914[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:13.075802[0m] on_sock_msg
-[[95m2021-05-05 02:15:13.075836[0m] {'nodeID': 19, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:13.075878[0m] LoRa transmit:
-[[95m2021-05-05 02:15:13.081185[0m] [92m[255, 19, 0, 0, 58, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:13.081676[0m] wait for tx_done
-[[95m2021-05-05 02:15:13.102462[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:13.218354[0m] on_sock_msg
-[[95m2021-05-05 02:15:13.218390[0m] {'nodeID': 20, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:13.218432[0m] LoRa transmit:
-[[95m2021-05-05 02:15:13.218453[0m] [92m[255, 20, 0, 0, 59, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:13.218923[0m] wait for tx_done
-[[95m2021-05-05 02:15:13.239724[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:13.355575[0m] on_sock_msg
-[[95m2021-05-05 02:15:13.355608[0m] {'nodeID': 21, 'status': 'off', 'opcode': 2}
-[[95m2021-05-05 02:15:13.355648[0m] LoRa transmit:
-[[95m2021-05-05 02:15:13.355668[0m] [92m[255, 21, 0, 0, 60, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:13.356139[0m] wait for tx_done
-[[95m2021-05-05 02:15:13.376982[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:13.999749[0m] on_sock_msg
-[[95m2021-05-05 02:15:13.999785[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 6, 'timestamp': 1620155713, 'opcode': 2}
-[[95m2021-05-05 02:15:13.999830[0m] LoRa transmit:
-[[95m2021-05-05 02:15:13.999851[0m] [92m[255, 19, 0, 0, 61, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:14.000327[0m] wait for tx_done
-[[95m2021-05-05 02:15:14.021124[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:21.241212[0m] on_sock_msg
-[[95m2021-05-05 02:15:21.241263[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'off', 'sequenceID': 7, 'timestamp': 1620155720, 'opcode': 2}
-[[95m2021-05-05 02:15:21.241315[0m] LoRa transmit:
-[[95m2021-05-05 02:15:21.241336[0m] [92m[255, 18, 0, 0, 62, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:21.241833[0m] wait for tx_done
-[[95m2021-05-05 02:15:21.262636[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:21.719988[0m] ---> RxDone
-[[95m2021-05-05 02:15:21.720167[0m] RSSI: -116 - PKT_RSSI: -68
-[[95m2021-05-05 02:15:21.720552[0m] LoRa receive: 
-[[95m2021-05-05 02:15:21.720592[0m] [18, 255, 'RESPONSE', 'OK', 62, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:15:21.720637[0m] Pi send server: 
-[[95m2021-05-05 02:15:21.720656[0m] [92m18.255.RESPONSE.OK.62.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:22.801934[0m] on_sock_msg
-[[95m2021-05-05 02:15:22.801980[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'off', 'sequenceID': 8, 'timestamp': 1620155721, 'opcode': 2}
-[[95m2021-05-05 02:15:22.802032[0m] LoRa transmit:
-[[95m2021-05-05 02:15:22.802053[0m] [92m[255, 18, 0, 0, 63, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:22.802534[0m] wait for tx_done
-[[95m2021-05-05 02:15:22.823336[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:23.281265[0m] ---> RxDone
-[[95m2021-05-05 02:15:23.281443[0m] RSSI: -114 - PKT_RSSI: -68
-[[95m2021-05-05 02:15:23.281827[0m] LoRa receive: 
-[[95m2021-05-05 02:15:23.281865[0m] [18, 255, 'RESPONSE', 'OK', 63, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:15:23.281910[0m] Pi send server: 
-[[95m2021-05-05 02:15:23.281930[0m] [92m18.255.RESPONSE.OK.63.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:24.461221[0m] on_sock_msg
-[[95m2021-05-05 02:15:24.461266[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 9, 'timestamp': 1620155723, 'opcode': 2}
-[[95m2021-05-05 02:15:24.461315[0m] LoRa transmit:
-[[95m2021-05-05 02:15:24.461336[0m] [92m[255, 18, 0, 0, 64, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:24.461817[0m] wait for tx_done
-[[95m2021-05-05 02:15:24.482621[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:27.273567[0m] on_sock_msg
-[[95m2021-05-05 02:15:27.273617[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'off', 'sequenceID': 10, 'timestamp': 1620155726, 'opcode': 2}
-[[95m2021-05-05 02:15:27.273669[0m] LoRa transmit:
-[[95m2021-05-05 02:15:27.273690[0m] [92m[255, 19, 0, 0, 65, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:27.274178[0m] wait for tx_done
-[[95m2021-05-05 02:15:27.295007[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:27.745187[0m] ---> RxDone
-[[95m2021-05-05 02:15:27.745360[0m] RSSI: -114 - PKT_RSSI: -48
-[[95m2021-05-05 02:15:27.745743[0m] LoRa receive: 
-[[95m2021-05-05 02:15:27.745782[0m] [19, 255, 'RESPONSE', 'OK', 65, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:15:27.745826[0m] Pi send server: 
-[[95m2021-05-05 02:15:27.745848[0m] [92m19.255.RESPONSE.OK.65.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:28.669134[0m] on_sock_msg
-[[95m2021-05-05 02:15:28.669181[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'off', 'sequenceID': 11, 'timestamp': 1620155727, 'opcode': 2}
-[[95m2021-05-05 02:15:28.669230[0m] LoRa transmit:
-[[95m2021-05-05 02:15:28.669251[0m] [92m[255, 19, 0, 0, 66, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:28.669737[0m] wait for tx_done
-[[95m2021-05-05 02:15:28.690542[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:29.140686[0m] ---> RxDone
-[[95m2021-05-05 02:15:29.140862[0m] RSSI: -117 - PKT_RSSI: -48
-[[95m2021-05-05 02:15:29.141247[0m] LoRa receive: 
-[[95m2021-05-05 02:15:29.141285[0m] [19, 255, 'RESPONSE', 'OK', 66, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:15:29.141329[0m] Pi send server: 
-[[95m2021-05-05 02:15:29.141348[0m] [92m19.255.RESPONSE.OK.66.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:29.950173[0m] on_sock_msg
-[[95m2021-05-05 02:15:29.950217[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 12, 'timestamp': 1620155729, 'opcode': 2}
-[[95m2021-05-05 02:15:29.950266[0m] LoRa transmit:
-[[95m2021-05-05 02:15:29.950287[0m] [92m[255, 19, 0, 0, 67, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:29.950769[0m] wait for tx_done
-[[95m2021-05-05 02:15:29.971570[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:33.246696[0m] ---> RxDone
-[[95m2021-05-05 02:15:33.246876[0m] RSSI: -115 - PKT_RSSI: -67
-[[95m2021-05-05 02:15:33.247154[0m] LoRa receive: 
-[[95m2021-05-05 02:15:33.247197[0m] [18, 255, 'RESPONSE', 'FAILED', 64, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:15:33.247247[0m] Pi send server: 
-[[95m2021-05-05 02:15:33.247269[0m] [92m18.255.RESPONSE.FAILED.64.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:38.330188[0m] on_sock_msg
-[[95m2021-05-05 02:15:38.330238[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'off', 'sequenceID': 13, 'timestamp': 1620155737, 'opcode': 2}
-[[95m2021-05-05 02:15:38.330289[0m] LoRa transmit:
-[[95m2021-05-05 02:15:38.330311[0m] [92m[255, 18, 0, 0, 68, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:38.330805[0m] wait for tx_done
-[[95m2021-05-05 02:15:38.351599[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:38.598298[0m] ---> RxDone
-[[95m2021-05-05 02:15:38.598495[0m] RSSI: -115 - PKT_RSSI: -49
-[[95m2021-05-05 02:15:38.598883[0m] LoRa receive: 
-[[95m2021-05-05 02:15:38.598924[0m] [19, 255, 'RESPONSE', 'FAILED', 67, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:15:38.598969[0m] Pi send server: 
-[[95m2021-05-05 02:15:38.598990[0m] [92m19.255.RESPONSE.FAILED.67.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:38.809068[0m] ---> RxDone
-[[95m2021-05-05 02:15:38.809248[0m] RSSI: -114 - PKT_RSSI: -67
-[[95m2021-05-05 02:15:38.809632[0m] LoRa receive: 
-[[95m2021-05-05 02:15:38.809668[0m] [18, 255, 'RESPONSE', 'OK', 68, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:15:38.809712[0m] Pi send server: 
-[[95m2021-05-05 02:15:38.809732[0m] [92m18.255.RESPONSE.OK.68.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:39.688272[0m] on_sock_msg
-[[95m2021-05-05 02:15:39.688317[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'off', 'sequenceID': 14, 'timestamp': 1620155738, 'opcode': 2}
-[[95m2021-05-05 02:15:39.688367[0m] LoRa transmit:
-[[95m2021-05-05 02:15:39.688388[0m] [92m[255, 19, 0, 0, 69, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:15:39.688870[0m] wait for tx_done
-[[95m2021-05-05 02:15:39.709681[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:15:40.159727[0m] ---> RxDone
-[[95m2021-05-05 02:15:40.159908[0m] RSSI: -116 - PKT_RSSI: -48
-[[95m2021-05-05 02:15:40.160296[0m] LoRa receive: 
-[[95m2021-05-05 02:15:40.160335[0m] [19, 255, 'RESPONSE', 'OK', 69, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:15:40.160380[0m] Pi send server: 
-[[95m2021-05-05 02:15:40.160400[0m] [92m19.255.RESPONSE.OK.69.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:37:15.898269[0m] on_sock_msg
-[[95m2021-05-05 02:37:15.898323[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 1, 'timestamp': 1620157035, 'opcode': 2}
-[[95m2021-05-05 02:37:15.898377[0m] LoRa transmit:
-[[95m2021-05-05 02:37:15.898399[0m] [92m[255, 18, 0, 0, 70, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:37:15.898793[0m] wait for tx_done
-[[95m2021-05-05 02:37:15.919653[0m] [92msend ok after 182[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:37:17.370987[0m] on_sock_msg
-[[95m2021-05-05 02:37:17.371030[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 2, 'timestamp': 1620157036, 'opcode': 2}
-[[95m2021-05-05 02:37:17.371079[0m] LoRa transmit:
-[[95m2021-05-05 02:37:17.371101[0m] [92m[255, 19, 0, 0, 71, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:37:17.371588[0m] wait for tx_done
-[[95m2021-05-05 02:37:17.392386[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:37:24.679129[0m] ---> RxDone
-[[95m2021-05-05 02:37:24.679355[0m] RSSI: -121 - PKT_RSSI: -77
-[[95m2021-05-05 02:37:24.679751[0m] LoRa receive: 
-[[95m2021-05-05 02:37:24.679793[0m] [18, 255, 'RESPONSE', 'FAILED', 70, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:37:24.679844[0m] Pi send server: 
-[[95m2021-05-05 02:37:24.679864[0m] [92m18.255.RESPONSE.FAILED.70.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:37:27.031021[0m] on_sock_msg
-[[95m2021-05-05 02:37:27.031069[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 3, 'timestamp': 1620157046, 'opcode': 2}
-[[95m2021-05-05 02:37:27.031120[0m] LoRa transmit:
-[[95m2021-05-05 02:37:27.031142[0m] [92m[255, 19, 0, 0, 72, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:37:27.031627[0m] wait for tx_done
-[[95m2021-05-05 02:37:27.052438[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:37:29.722107[0m] on_sock_msg
-[[95m2021-05-05 02:37:29.722156[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 4, 'timestamp': 1620157048, 'opcode': 2}
-[[95m2021-05-05 02:37:29.722205[0m] LoRa transmit:
-[[95m2021-05-05 02:37:29.722226[0m] [92m[255, 19, 0, 0, 73, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:37:29.722717[0m] wait for tx_done
-[[95m2021-05-05 02:37:29.743537[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:37:30.607810[0m] on_sock_msg
-[[95m2021-05-05 02:37:30.607851[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 5, 'timestamp': 1620157049, 'opcode': 2}
-[[95m2021-05-05 02:37:30.607898[0m] LoRa transmit:
-[[95m2021-05-05 02:37:30.607919[0m] [92m[255, 19, 0, 0, 74, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:37:30.608398[0m] wait for tx_done
-[[95m2021-05-05 02:37:30.629203[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:37:31.175447[0m] on_sock_msg
-[[95m2021-05-05 02:37:31.175491[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 6, 'timestamp': 1620157050, 'opcode': 2}
-[[95m2021-05-05 02:37:31.175539[0m] LoRa transmit:
-[[95m2021-05-05 02:37:31.175559[0m] [92m[255, 18, 0, 0, 75, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:37:31.176044[0m] wait for tx_done
-[[95m2021-05-05 02:37:31.196840[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:37:32.033509[0m] on_sock_msg
-[[95m2021-05-05 02:37:32.033550[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 7, 'timestamp': 1620157051, 'opcode': 2}
-[[95m2021-05-05 02:37:32.033597[0m] LoRa transmit:
-[[95m2021-05-05 02:37:32.033617[0m] [92m[255, 19, 0, 0, 76, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 02:37:32.034099[0m] wait for tx_done
-[[95m2021-05-05 02:37:32.054887[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:37:39.962064[0m] ---> RxDone
-[[95m2021-05-05 02:37:39.962291[0m] RSSI: -118 - PKT_RSSI: -77
-[[95m2021-05-05 02:37:39.962687[0m] LoRa receive: 
-[[95m2021-05-05 02:37:39.962730[0m] [18, 255, 'RESPONSE', 'FAILED', 75, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 02:37:39.962781[0m] Pi send server: 
-[[95m2021-05-05 02:37:39.968070[0m] [92m18.255.RESPONSE.FAILED.75.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 02:39:39.504982[0m] ---> RxDone
-[[95m2021-05-05 02:39:39.505162[0m] RSSI: -121 - PKT_RSSI: -122
-[[95m2021-05-05 02:39:39.505443[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 03:14:20.947393[0m] [91mon_sock_error[0m
-[[95m2021-05-05 03:14:20.947457[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 03:14:20.947685[0m] on_sock_close
-[[95m2021-05-05 03:14:21.953903[0m] reconnecting[3]
-[[95m2021-05-05 03:14:30.376479[0m] on_sock_open
-[[95m2021-05-05 03:14:30.376533[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 03:48:02.887767[0m] [91mon_sock_error[0m
-[[95m2021-05-05 03:48:02.887829[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 03:48:02.888017[0m] on_sock_close
-[[95m2021-05-05 03:48:03.894196[0m] reconnecting[4]
-[[95m2021-05-05 03:48:11.308034[0m] on_sock_open
-[[95m2021-05-05 03:48:11.308089[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 04:22:50.676725[0m] [91mon_sock_error[0m
-[[95m2021-05-05 04:22:50.676788[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 04:22:50.676995[0m] on_sock_close
-[[95m2021-05-05 04:22:51.683182[0m] reconnecting[5]
-[[95m2021-05-05 04:23:05.062167[0m] on_sock_open
-[[95m2021-05-05 04:23:05.062222[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 04:56:23.800331[0m] [91mon_sock_error[0m
-[[95m2021-05-05 04:56:23.800393[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 04:56:23.800580[0m] on_sock_close
-[[95m2021-05-05 04:56:24.806776[0m] reconnecting[6]
-[[95m2021-05-05 04:56:38.156006[0m] on_sock_open
-[[95m2021-05-05 04:56:38.156059[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 05:30:35.798771[0m] [91mon_sock_error[0m
-[[95m2021-05-05 05:30:35.798833[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 05:30:35.799043[0m] on_sock_close
-[[95m2021-05-05 05:30:36.805226[0m] reconnecting[7]
-[[95m2021-05-05 05:30:47.355831[0m] on_sock_open
-[[95m2021-05-05 05:30:47.355884[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 05:39:19.527619[0m] ---> RxDone
-[[95m2021-05-05 05:39:19.527860[0m] RSSI: -118 - PKT_RSSI: -121
-[[95m2021-05-05 05:39:19.528261[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 06:06:31.166352[0m] [91mon_sock_error[0m
-[[95m2021-05-05 06:06:31.166415[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 06:06:31.166606[0m] on_sock_close
-[[95m2021-05-05 06:06:32.172791[0m] reconnecting[8]
-[[95m2021-05-05 06:06:40.717795[0m] on_sock_open
-[[95m2021-05-05 06:06:40.717850[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 06:10:25.512198[0m] ---> RxDone
-[[95m2021-05-05 06:10:25.512423[0m] RSSI: -119 - PKT_RSSI: -121
-[[95m2021-05-05 06:10:25.512824[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 06:13:29.849143[0m] ---> RxDone
-[[95m2021-05-05 06:13:29.849362[0m] RSSI: -119 - PKT_RSSI: -121
-[[95m2021-05-05 06:13:29.849761[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 06:41:20.325566[0m] [91mon_sock_error[0m
-[[95m2021-05-05 06:41:20.325625[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 06:41:20.325813[0m] on_sock_close
-[[95m2021-05-05 06:41:21.332003[0m] reconnecting[9]
-[[95m2021-05-05 06:41:31.854785[0m] on_sock_open
-[[95m2021-05-05 06:41:31.854838[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 07:22:34.458553[0m] [91mon_sock_error[0m
-[[95m2021-05-05 07:22:34.458616[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 07:22:34.458809[0m] on_sock_close
-[[95m2021-05-05 07:22:35.177170[0m] [91mthread_ping[0m
-[[95m2021-05-05 07:22:35.177212[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 07:22:35.464991[0m] reconnecting[10]
-[[95m2021-05-05 07:22:48.857673[0m] on_sock_open
-[[95m2021-05-05 07:22:48.857726[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 07:57:13.630422[0m] [91mon_sock_error[0m
-[[95m2021-05-05 07:57:13.630484[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 07:57:13.630674[0m] on_sock_close
-[[95m2021-05-05 07:57:14.636886[0m] reconnecting[11]
-[[95m2021-05-05 07:57:30.476734[0m] on_sock_open
-[[95m2021-05-05 07:57:30.476788[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 08:30:45.269247[0m] [91mon_sock_error[0m
-[[95m2021-05-05 08:30:45.269308[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 08:30:45.269494[0m] on_sock_close
-[[95m2021-05-05 08:30:46.275684[0m] reconnecting[12]
-[[95m2021-05-05 08:30:55.564050[0m] on_sock_open
-[[95m2021-05-05 08:30:55.564104[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 08:38:56.570746[0m] ---> RxDone
-[[95m2021-05-05 08:38:56.570967[0m] RSSI: -119 - PKT_RSSI: -121
-[[95m2021-05-05 08:38:56.571363[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 09:05:37.619824[0m] [91mon_sock_error[0m
-[[95m2021-05-05 09:05:37.619888[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 09:05:37.620081[0m] on_sock_close
-[[95m2021-05-05 09:05:37.739834[0m] [91mthread_ping[0m
-[[95m2021-05-05 09:05:37.739871[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 09:05:38.626271[0m] reconnecting[13]
-[[95m2021-05-05 09:05:48.965894[0m] on_sock_open
-[[95m2021-05-05 09:05:48.965949[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 09:39:32.660653[0m] [91mon_sock_error[0m
-[[95m2021-05-05 09:39:32.660711[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 09:39:32.660896[0m] on_sock_close
-[[95m2021-05-05 09:39:33.667082[0m] reconnecting[14]
-[[95m2021-05-05 09:39:44.149410[0m] on_sock_open
-[[95m2021-05-05 09:39:44.149466[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 10:12:09.315081[0m] [91mon_sock_error[0m
-[[95m2021-05-05 10:12:09.315143[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 10:12:09.315332[0m] on_sock_close
-[[95m2021-05-05 10:12:10.321529[0m] reconnecting[15]
-[[95m2021-05-05 10:12:23.763910[0m] on_sock_open
-[[95m2021-05-05 10:12:23.763964[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 10:47:24.433149[0m] [91mon_sock_error[0m
-[[95m2021-05-05 10:47:24.433212[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 10:47:24.433402[0m] on_sock_close
-[[95m2021-05-05 10:47:25.439593[0m] reconnecting[16]
-[[95m2021-05-05 10:47:33.033600[0m] on_sock_open
-[[95m2021-05-05 10:47:33.033654[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 11:19:14.065516[0m] [91mon_sock_error[0m
-[[95m2021-05-05 11:19:14.065611[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 11:19:14.065838[0m] on_sock_close
-[[95m2021-05-05 11:19:14.102801[0m] [91mthread_ping[0m
-[[95m2021-05-05 11:19:14.102858[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 11:19:15.072077[0m] reconnecting[17]
-[[95m2021-05-05 11:19:25.572158[0m] on_sock_open
-[[95m2021-05-05 11:19:25.572212[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 11:24:46.099656[0m] ---> RxDone
-[[95m2021-05-05 11:24:46.099830[0m] RSSI: -118 - PKT_RSSI: -121
-[[95m2021-05-05 11:24:46.100106[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 11:55:26.303429[0m] [91mon_sock_error[0m
-[[95m2021-05-05 11:55:26.303492[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 11:55:26.303682[0m] on_sock_close
-[[95m2021-05-05 11:55:27.309876[0m] reconnecting[18]
-[[95m2021-05-05 11:55:36.537626[0m] on_sock_open
-[[95m2021-05-05 11:55:36.537697[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 12:26:48.752652[0m] ---> RxDone
-[[95m2021-05-05 12:26:48.752831[0m] RSSI: -121 - PKT_RSSI: -122
-[[95m2021-05-05 12:26:48.753110[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:30:47.380439[0m] [91mon_sock_error[0m
-[[95m2021-05-05 12:30:47.380501[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 12:30:47.380693[0m] on_sock_close
-[[95m2021-05-05 12:30:48.386889[0m] reconnecting[19]
-[[95m2021-05-05 12:30:58.813717[0m] on_sock_open
-[[95m2021-05-05 12:30:58.813771[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 12:34:03.632130[0m] ---> RxDone
-[[95m2021-05-05 12:34:03.632343[0m] RSSI: -121 - PKT_RSSI: -56
-[[95m2021-05-05 12:34:03.632737[0m] LoRa receive: 
-[[95m2021-05-05 12:34:03.632782[0m] [19, 255, 'NOTIF', 'NONE', 255, 'GIAI_PHONG_1', 'OFF', 'NONE', 'OPCODE_NONE', 'POWER_ON_POWER_DOWN_RESET']
-[[95m2021-05-05 12:34:03.632834[0m] Pi send server: 
-[[95m2021-05-05 12:34:03.632855[0m] [92m19.255.NOTIF.NONE.255.GIAI_PHONG_1.OFF.NONE.OPCODE_NONE.POWER_ON_POWER_DOWN_RESET[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:34:11.021943[0m] ---> RxDone
-[[95m2021-05-05 12:34:11.022170[0m] RSSI: -119 - PKT_RSSI: -66
-[[95m2021-05-05 12:34:11.022569[0m] LoRa receive: 
-[[95m2021-05-05 12:34:11.022613[0m] [18, 255, 'NOTIF', 'NONE', 255, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'OPCODE_NONE', 'POWER_ON_POWER_DOWN_RESET']
-[[95m2021-05-05 12:34:11.022664[0m] Pi send server: 
-[[95m2021-05-05 12:34:11.022685[0m] [92m18.255.NOTIF.NONE.255.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.OPCODE_NONE.POWER_ON_POWER_DOWN_RESET[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:37:47.802115[0m] on_sock_msg
-[[95m2021-05-05 12:37:47.802169[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'off', 'sequenceID': 1, 'timestamp': 1620193066, 'opcode': 2}
-[[95m2021-05-05 12:37:47.802223[0m] LoRa transmit:
-[[95m2021-05-05 12:37:47.802245[0m] [92m[255, 18, 0, 0, 77, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 12:37:47.802744[0m] wait for tx_done
-[[95m2021-05-05 12:37:47.823565[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:37:48.273428[0m] ---> RxDone
-[[95m2021-05-05 12:37:48.273626[0m] RSSI: -121 - PKT_RSSI: -68
-[[95m2021-05-05 12:37:48.274022[0m] LoRa receive: 
-[[95m2021-05-05 12:37:48.274063[0m] [18, 255, 'RESPONSE', 'OK', 77, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 12:37:48.274111[0m] Pi send server: 
-[[95m2021-05-05 12:37:48.274132[0m] [92m18.255.RESPONSE.OK.77.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:37:50.122364[0m] on_sock_msg
-[[95m2021-05-05 12:37:50.122412[0m] {'source': 'browser', 'type': 'control', 'nodeID': '19', 'status': 'on', 'sequenceID': 2, 'timestamp': 1620193069, 'opcode': 2}
-[[95m2021-05-05 12:37:50.122466[0m] LoRa transmit:
-[[95m2021-05-05 12:37:50.122488[0m] [92m[255, 19, 0, 0, 78, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 12:37:50.122976[0m] wait for tx_done
-[[95m2021-05-05 12:37:50.143806[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:37:52.153102[0m] on_sock_msg
-[[95m2021-05-05 12:37:52.153153[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'on', 'sequenceID': 3, 'timestamp': 1620193071, 'opcode': 2}
-[[95m2021-05-05 12:37:52.153207[0m] LoRa transmit:
-[[95m2021-05-05 12:37:52.153228[0m] [92m[255, 18, 0, 0, 79, 0, 1, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 12:37:52.153725[0m] wait for tx_done
-[[95m2021-05-05 12:37:52.174536[0m] [92msend ok after 147[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:37:58.217947[0m] ---> RxDone
-[[95m2021-05-05 12:37:58.218172[0m] RSSI: -119 - PKT_RSSI: -62
-[[95m2021-05-05 12:37:58.218571[0m] LoRa receive: 
-[[95m2021-05-05 12:37:58.218616[0m] [19, 255, 'RESPONSE', 'FAILED', 78, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 12:37:58.218666[0m] Pi send server: 
-[[95m2021-05-05 12:37:58.218687[0m] [92m19.255.RESPONSE.FAILED.78.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:38:00.738670[0m] ---> RxDone
-[[95m2021-05-05 12:38:00.738869[0m] RSSI: -121 - PKT_RSSI: -68
-[[95m2021-05-05 12:38:00.739261[0m] LoRa receive: 
-[[95m2021-05-05 12:38:00.739301[0m] [18, 255, 'RESPONSE', 'FAILED', 79, 'GIAI_PHONG_1', 'OFF', 'LIGHT_ON_FAILED', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 12:38:00.739348[0m] Pi send server: 
-[[95m2021-05-05 12:38:00.739368[0m] [92m18.255.RESPONSE.FAILED.79.GIAI_PHONG_1.OFF.LIGHT_ON_FAILED.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:41:10.009124[0m] on_sock_msg
-[[95m2021-05-05 12:41:10.009178[0m] {'source': 'browser', 'type': 'control', 'nodeID': '18', 'status': 'off', 'sequenceID': 4, 'timestamp': 1620193269, 'opcode': 2}
-[[95m2021-05-05 12:41:10.009231[0m] LoRa transmit:
-[[95m2021-05-05 12:41:10.009254[0m] [92m[255, 18, 0, 0, 80, 0, 0, 0, 2, 0][0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> TX[0m
-[[95m2021-05-05 12:41:10.009755[0m] wait for tx_done
-[[95m2021-05-05 12:41:10.030591[0m] [92msend ok after 148[0m
-[93mClear flag: TxDone[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:41:10.480907[0m] ---> RxDone
-[[95m2021-05-05 12:41:10.481087[0m] RSSI: -121 - PKT_RSSI: -68
-[[95m2021-05-05 12:41:10.481473[0m] LoRa receive: 
-[[95m2021-05-05 12:41:10.481511[0m] [18, 255, 'RESPONSE', 'OK', 80, 'GIAI_PHONG_1', 'OFF', 'NONE', 'RESPOSNE_RELAY_CONTROL', 'UNKNOWN']
-[[95m2021-05-05 12:41:10.481556[0m] Pi send server: 
-[[95m2021-05-05 12:41:10.481577[0m] [92m18.255.RESPONSE.OK.80.GIAI_PHONG_1.OFF.NONE.RESPOSNE_RELAY_CONTROL.UNKNOWN[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 12:57:20.301927[0m] ---> RxDone
-[[95m2021-05-05 12:57:20.302154[0m] RSSI: -119 - PKT_RSSI: -122
-[[95m2021-05-05 12:57:20.302555[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 13:20:47.017054[0m] [91mon_sock_error[0m
-[[95m2021-05-05 13:20:47.017120[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 13:20:47.017313[0m] on_sock_close
-[[95m2021-05-05 13:20:48.023506[0m] reconnecting[20]
-[[95m2021-05-05 13:20:48.781636[0m] [91mthread_ping[0m
-[[95m2021-05-05 13:20:48.781692[0m] [91msocket is already closed.[0m
-[[95m2021-05-05 13:20:59.326716[0m] on_sock_open
-[[95m2021-05-05 13:20:59.326771[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 13:55:17.030359[0m] [91mon_sock_error[0m
-[[95m2021-05-05 13:55:17.030422[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 13:55:17.030614[0m] on_sock_close
-[[95m2021-05-05 13:55:18.036810[0m] reconnecting[21]
-[[95m2021-05-05 13:55:31.637097[0m] on_sock_open
-[[95m2021-05-05 13:55:31.637151[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 13:59:36.103292[0m] ---> RxDone
-[[95m2021-05-05 13:59:36.103471[0m] RSSI: -119 - PKT_RSSI: -121
-[[95m2021-05-05 13:59:36.103750[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 14:09:31.112207[0m] ---> RxDone
-[[95m2021-05-05 14:09:31.112389[0m] RSSI: -119 - PKT_RSSI: -120
-[[95m2021-05-05 14:09:31.112667[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 14:30:28.226237[0m] [91mon_sock_error[0m
-[[95m2021-05-05 14:30:28.226300[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 14:30:28.226493[0m] on_sock_close
-[[95m2021-05-05 14:30:29.232689[0m] reconnecting[22]
-[[95m2021-05-05 14:30:42.604931[0m] on_sock_open
-[[95m2021-05-05 14:30:42.604986[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 15:07:26.867301[0m] [91mon_sock_error[0m
-[[95m2021-05-05 15:07:26.867364[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 15:07:26.867555[0m] on_sock_close
-[[95m2021-05-05 15:07:27.873801[0m] reconnecting[23]
-[[95m2021-05-05 15:07:39.348075[0m] on_sock_open
-[[95m2021-05-05 15:07:39.348130[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 15:41:31.674281[0m] [91mon_sock_error[0m
-[[95m2021-05-05 15:41:31.674364[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 15:41:31.674554[0m] on_sock_close
-[[95m2021-05-05 15:41:32.680746[0m] reconnecting[24]
-[[95m2021-05-05 15:41:48.205642[0m] on_sock_open
-[[95m2021-05-05 15:41:48.205697[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 16:17:34.776801[0m] [91mon_sock_error[0m
-[[95m2021-05-05 16:17:34.776863[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 16:17:34.777055[0m] on_sock_close
-[[95m2021-05-05 16:17:35.783245[0m] reconnecting[25]
-[[95m2021-05-05 16:17:49.090998[0m] on_sock_open
-[[95m2021-05-05 16:17:49.091050[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 16:50:55.031393[0m] [91mon_sock_error[0m
-[[95m2021-05-05 16:50:55.031452[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 16:50:55.031636[0m] on_sock_close
-[[95m2021-05-05 16:50:56.037827[0m] reconnecting[26]
-[[95m2021-05-05 16:51:05.452332[0m] on_sock_open
-[[95m2021-05-05 16:51:05.452393[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 17:24:37.551537[0m] [91mon_sock_error[0m
-[[95m2021-05-05 17:24:37.551600[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 17:24:37.551791[0m] on_sock_close
-[[95m2021-05-05 17:24:38.249632[0m] [91mthread_ping[0m
-[[95m2021-05-05 17:24:38.249681[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 17:24:38.557976[0m] reconnecting[27]
-[[95m2021-05-05 17:24:47.855655[0m] on_sock_open
-[[95m2021-05-05 17:24:47.855709[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 17:26:48.783806[0m] ---> RxDone
-[[95m2021-05-05 17:26:48.783967[0m] RSSI: -119 - PKT_RSSI: -122
-[[95m2021-05-05 17:26:48.784239[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 17:55:25.058676[0m] ---> RxDone
-[[95m2021-05-05 17:55:25.058858[0m] RSSI: -121 - PKT_RSSI: -122
-[[95m2021-05-05 17:55:25.059137[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 17:58:46.415557[0m] [91mon_sock_error[0m
-[[95m2021-05-05 17:58:46.415619[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 17:58:46.415808[0m] on_sock_close
-[[95m2021-05-05 17:58:47.422003[0m] reconnecting[28]
-[[95m2021-05-05 17:58:56.773209[0m] on_sock_open
-[[95m2021-05-05 17:58:56.773267[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 18:34:01.661985[0m] [91mon_sock_error[0m
-[[95m2021-05-05 18:34:01.662046[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 18:34:01.662236[0m] on_sock_close
-[[95m2021-05-05 18:34:02.668438[0m] reconnecting[29]
-[[95m2021-05-05 18:34:12.093226[0m] on_sock_open
-[[95m2021-05-05 18:34:12.093279[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 18:51:23.444084[0m] ---> RxDone
-[[95m2021-05-05 18:51:23.444313[0m] RSSI: -121 - PKT_RSSI: -122
-[[95m2021-05-05 18:51:23.444715[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 19:08:26.508906[0m] [91mon_sock_error[0m
-[[95m2021-05-05 19:08:26.508968[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 19:08:26.509159[0m] on_sock_close
-[[95m2021-05-05 19:08:27.515362[0m] reconnecting[30]
-[[95m2021-05-05 19:08:40.939037[0m] on_sock_open
-[[95m2021-05-05 19:08:40.939090[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 19:44:47.951408[0m] [91mon_sock_error[0m
-[[95m2021-05-05 19:44:47.951471[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 19:44:47.951661[0m] on_sock_close
-[[95m2021-05-05 19:44:48.957872[0m] reconnecting[31]
-[[95m2021-05-05 19:45:00.267786[0m] on_sock_open
-[[95m2021-05-05 19:45:00.267841[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 20:19:02.357273[0m] [91mon_sock_error[0m
-[[95m2021-05-05 20:19:02.357332[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 20:19:02.357522[0m] on_sock_close
-[[95m2021-05-05 20:19:03.363714[0m] reconnecting[32]
-[[95m2021-05-05 20:19:16.766533[0m] on_sock_open
-[[95m2021-05-05 20:19:16.766587[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 20:54:24.098768[0m] [91mon_sock_error[0m
-[[95m2021-05-05 20:54:24.098828[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 20:54:24.099016[0m] on_sock_close
-[[95m2021-05-05 20:54:25.105220[0m] reconnecting[33]
-[[95m2021-05-05 20:54:35.407056[0m] on_sock_open
-[[95m2021-05-05 20:54:35.407110[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 20:56:02.332724[0m] ---> RxDone
-[[95m2021-05-05 20:56:02.332902[0m] RSSI: -117 - PKT_RSSI: -121
-[[95m2021-05-05 20:56:02.333181[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 21:22:50.166402[0m] ---> RxDone
-[[95m2021-05-05 21:22:50.166580[0m] RSSI: -106 - PKT_RSSI: -107
-[[95m2021-05-05 21:22:50.166859[0m] [91mCRC failed -> msg discarded[0m
-[93mClear flag: PayloadCrcError[0m
-[93mClear flag: RxDone[0m
-[93mReset rx pointer to base[0m
-[93mLoRa -> STDBY[0m
-[93mLoRa -> RXCONT[0m
-[[95m2021-05-05 21:31:30.539992[0m] [91mon_sock_error[0m
-[[95m2021-05-05 21:31:30.540058[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 21:31:30.540251[0m] on_sock_close
-[[95m2021-05-05 21:31:31.546445[0m] reconnecting[34]
-[[95m2021-05-05 21:31:40.917731[0m] on_sock_open
-[[95m2021-05-05 21:31:40.917784[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 22:06:45.917059[0m] [91mon_sock_error[0m
-[[95m2021-05-05 22:06:45.917120[0m] [91mConnection is already closed.[0m
-[[95m2021-05-05 22:06:45.917311[0m] on_sock_close
-[[95m2021-05-05 22:06:46.922740[0m] reconnecting[35]
-[[95m2021-05-05 22:06:57.354738[0m] on_sock_open
-[[95m2021-05-05 22:06:57.354793[0m] [92mconnected to server successfully[0m
-[[95m2021-05-05 22:41:06.774504[0m] 
+[[95m2021-06-18 23:54:39.698321[0m] SX127x LoRa registers:
+ modulation         1
+ mode               STDBY
+ freq               433.000000 MHz
+ coding_rate        CR4_5
+ bw                 BW62_5
+ spreading_factor   4096 chips/symb
+ implicit_hdr_mode  ON
+ rx_payload_crc     ON
+ tx_cont_mode       OFF
+ preamble           32
+ low_data_rate_opti ON
+ agc_auto_on        OFF
+ symb_timeout       100
+ freq_hop_period    0
+ hop_channel        {'pll_timeout': 0, 'crc_on_payload': 0, 'fhss_present_channel': 0}
+ payload_length     10
+ max_payload_length 255
+ irq_flags_mask     {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ irq_flags          {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ rx_nb_byte         0
+ rx_header_cnt      0
+ rx_packet_cnt      0
+ pkt_snr_value      64.000000
+ pkt_rssi_value     -164
+ rssi_value         -164
+ fei                0
+ pa_select          PA_BOOST
+ max_power          13.800000 dBm
+ output_power       13.800000 dBm
+ ocp                ON
+ ocp_trim           200.000000 mA
+ lna_gain           G1
+ lna_boost_lf       0b0
+ lna_boost_hf       0b0
+ detect_optimize    0x3
+ detection_thresh   0xa
+ sync_word          0x12
+ dio_mapping 0..5   [0, 0, 0, 0, 0, 0]
+ tcxo               XTAL
+ pa_dac             PA_BOOST
+ fifo_addr_ptr      0x0
+ fifo_tx_base_addr  0x80
+ fifo_rx_base_addr  0x0
+ fifo_rx_curr_addr  0x0
+ fifo_rx_byte_addr  0x0
+ status             {'rx_coding_rate': 0, 'modem_clear': 1, 'header_info_valid': 0, 'rx_ongoing': 0, 'signal_sync': 0, 'signal_detected': 0}
+ version            0x12
+
+[[95m2021-06-18 23:54:39.698410[0m] create websocket
+[93mLoRa -> RXCONT[0m
+[[95m2021-06-18 23:54:39.700465[0m] [94mcurrent active thread 4[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-18 23:54:40.705240[0m] reconnecting[1]
+[[95m2021-06-18 23:54:41.807774[0m] on_sock_open
+[[95m2021-06-18 23:54:41.807881[0m] [92mconnected to server successfully[0m
+[93mLoRa -> SLEEP[0m
+[[95m2021-06-18 23:55:05.247973[0m] Exit
+[[95m2021-06-18 23:55:07.316880[0m] LoRaGateWay Start
+[[95m2021-06-18 23:55:07.737813[0m] start lora config
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> FSK_STDBY[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[[95m2021-06-18 23:55:07.825613[0m] SX127x LoRa registers:
+ modulation         1
+ mode               STDBY
+ freq               433.000000 MHz
+ coding_rate        CR4_5
+ bw                 BW62_5
+ spreading_factor   4096 chips/symb
+ implicit_hdr_mode  ON
+ rx_payload_crc     ON
+ tx_cont_mode       OFF
+ preamble           32
+ low_data_rate_opti ON
+ agc_auto_on        OFF
+ symb_timeout       100
+ freq_hop_period    0
+ hop_channel        {'pll_timeout': 0, 'crc_on_payload': 0, 'fhss_present_channel': 0}
+ payload_length     10
+ max_payload_length 255
+ irq_flags_mask     {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ irq_flags          {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ rx_nb_byte         0
+ rx_header_cnt      0
+ rx_packet_cnt      0
+ pkt_snr_value      64.000000
+ pkt_rssi_value     -164
+ rssi_value         -164
+ fei                0
+ pa_select          PA_BOOST
+ max_power          13.800000 dBm
+ output_power       13.800000 dBm
+ ocp                ON
+ ocp_trim           200.000000 mA
+ lna_gain           G1
+ lna_boost_lf       0b0
+ lna_boost_hf       0b0
+ detect_optimize    0x3
+ detection_thresh   0xa
+ sync_word          0x12
+ dio_mapping 0..5   [0, 0, 0, 0, 0, 0]
+ tcxo               XTAL
+ pa_dac             PA_BOOST
+ fifo_addr_ptr      0x0
+ fifo_tx_base_addr  0x80
+ fifo_rx_base_addr  0x0
+ fifo_rx_curr_addr  0x0
+ fifo_rx_byte_addr  0x0
+ status             {'rx_coding_rate': 0, 'modem_clear': 1, 'header_info_valid': 0, 'rx_ongoing': 0, 'signal_sync': 0, 'signal_detected': 0}
+ version            0x12
+
+[[95m2021-06-18 23:55:07.825675[0m] create websocket
+[93mLoRa -> RXCONT[0m
+[[95m2021-06-18 23:55:07.828650[0m] [94mcurrent active thread 4[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-18 23:55:08.832446[0m] reconnecting[1]
+[[95m2021-06-18 23:55:10.104390[0m] on_sock_open
+[[95m2021-06-18 23:55:10.104446[0m] [92mconnected to server successfully[0m
+[[95m2021-06-18 23:55:27.464336[0m] LoRaGateWay Start
+[[95m2021-06-18 23:55:27.886024[0m] start lora config
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> FSK_STDBY[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[[95m2021-06-18 23:55:27.974343[0m] SX127x LoRa registers:
+ modulation         1
+ mode               STDBY
+ freq               433.000000 MHz
+ coding_rate        CR4_5
+ bw                 BW62_5
+ spreading_factor   4096 chips/symb
+ implicit_hdr_mode  ON
+ rx_payload_crc     ON
+ tx_cont_mode       OFF
+ preamble           32
+ low_data_rate_opti ON
+ agc_auto_on        OFF
+ symb_timeout       100
+ freq_hop_period    0
+ hop_channel        {'pll_timeout': 0, 'crc_on_payload': 0, 'fhss_present_channel': 0}
+ payload_length     10
+ max_payload_length 255
+ irq_flags_mask     {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ irq_flags          {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ rx_nb_byte         0
+ rx_header_cnt      0
+ rx_packet_cnt      0
+ pkt_snr_value      64.000000
+ pkt_rssi_value     -164
+ rssi_value         -164
+ fei                0
+ pa_select          PA_BOOST
+ max_power          13.800000 dBm
+ output_power       13.800000 dBm
+ ocp                ON
+ ocp_trim           200.000000 mA
+ lna_gain           G1
+ lna_boost_lf       0b0
+ lna_boost_hf       0b0
+ detect_optimize    0x3
+ detection_thresh   0xa
+ sync_word          0x12
+ dio_mapping 0..5   [0, 0, 0, 0, 0, 0]
+ tcxo               XTAL
+ pa_dac             PA_BOOST
+ fifo_addr_ptr      0x0
+ fifo_tx_base_addr  0x80
+ fifo_rx_base_addr  0x0
+ fifo_rx_curr_addr  0x0
+ fifo_rx_byte_addr  0x0
+ status             {'rx_coding_rate': 0, 'modem_clear': 1, 'header_info_valid': 0, 'rx_ongoing': 0, 'signal_sync': 0, 'signal_detected': 0}
+ version            0x12
+
+[[95m2021-06-18 23:55:27.974417[0m] create websocket
+[93mLoRa -> RXCONT[0m
+[[95m2021-06-18 23:55:27.976056[0m] [94mcurrent active thread 4[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-18 23:55:28.981249[0m] reconnecting[1]
+[[95m2021-06-18 23:55:30.582026[0m] on_sock_open
+[[95m2021-06-18 23:55:30.582081[0m] [92mconnected to server successfully[0m
+[93mLoRa -> SLEEP[0m
+[[95m2021-06-18 23:55:56.883964[0m] Exit
+[[95m2021-06-18 23:57:44.702180[0m] LoRaGateWay Start
+[[95m2021-06-18 23:57:45.123077[0m] start lora config
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> FSK_STDBY[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[[95m2021-06-18 23:57:45.211032[0m] SX127x LoRa registers:
+ modulation         1
+ mode               STDBY
+ freq               433.000000 MHz
+ coding_rate        CR4_5
+ bw                 BW62_5
+ spreading_factor   4096 chips/symb
+ implicit_hdr_mode  ON
+ rx_payload_crc     ON
+ tx_cont_mode       OFF
+ preamble           32
+ low_data_rate_opti ON
+ agc_auto_on        OFF
+ symb_timeout       100
+ freq_hop_period    0
+ hop_channel        {'pll_timeout': 0, 'crc_on_payload': 0, 'fhss_present_channel': 0}
+ payload_length     10
+ max_payload_length 255
+ irq_flags_mask     {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ irq_flags          {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ rx_nb_byte         0
+ rx_header_cnt      0
+ rx_packet_cnt      0
+ pkt_snr_value      64.000000
+ pkt_rssi_value     -164
+ rssi_value         -164
+ fei                0
+ pa_select          PA_BOOST
+ max_power          13.800000 dBm
+ output_power       13.800000 dBm
+ ocp                ON
+ ocp_trim           200.000000 mA
+ lna_gain           G1
+ lna_boost_lf       0b0
+ lna_boost_hf       0b0
+ detect_optimize    0x3
+ detection_thresh   0xa
+ sync_word          0x12
+ dio_mapping 0..5   [0, 0, 0, 0, 0, 0]
+ tcxo               XTAL
+ pa_dac             PA_BOOST
+ fifo_addr_ptr      0x0
+ fifo_tx_base_addr  0x80
+ fifo_rx_base_addr  0x0
+ fifo_rx_curr_addr  0x0
+ fifo_rx_byte_addr  0x0
+ status             {'rx_coding_rate': 0, 'modem_clear': 1, 'header_info_valid': 0, 'rx_ongoing': 0, 'signal_sync': 0, 'signal_detected': 0}
+ version            0x12
+
+[[95m2021-06-18 23:57:45.211105[0m] create websocket
+[93mLoRa -> RXCONT[0m
+[[95m2021-06-18 23:57:45.212718[0m] [94mcurrent active thread 4[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-18 23:57:46.222976[0m] reconnecting[1]
+[[95m2021-06-18 23:57:47.655046[0m] on_sock_open
+[[95m2021-06-18 23:57:47.655118[0m] [92mconnected to server successfully[0m
+[[95m2021-06-19 00:01:03.326917[0m] LoRaGateWay Start
+[[95m2021-06-19 00:01:03.751502[0m] start lora config
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> FSK_STDBY[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[[95m2021-06-19 00:01:03.840287[0m] SX127x LoRa registers:
+ modulation         1
+ mode               STDBY
+ freq               433.000000 MHz
+ coding_rate        CR4_5
+ bw                 BW62_5
+ spreading_factor   4096 chips/symb
+ implicit_hdr_mode  ON
+ rx_payload_crc     ON
+ tx_cont_mode       OFF
+ preamble           32
+ low_data_rate_opti ON
+ agc_auto_on        OFF
+ symb_timeout       100
+ freq_hop_period    0
+ hop_channel        {'pll_timeout': 0, 'crc_on_payload': 0, 'fhss_present_channel': 0}
+ payload_length     10
+ max_payload_length 255
+ irq_flags_mask     {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ irq_flags          {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ rx_nb_byte         0
+ rx_header_cnt      0
+ rx_packet_cnt      0
+ pkt_snr_value      64.000000
+ pkt_rssi_value     -164
+ rssi_value         -164
+ fei                0
+ pa_select          PA_BOOST
+ max_power          13.800000 dBm
+ output_power       13.800000 dBm
+ ocp                ON
+ ocp_trim           200.000000 mA
+ lna_gain           G1
+ lna_boost_lf       0b0
+ lna_boost_hf       0b0
+ detect_optimize    0x3
+ detection_thresh   0xa
+ sync_word          0x12
+ dio_mapping 0..5   [0, 0, 0, 0, 0, 0]
+ tcxo               XTAL
+ pa_dac             PA_BOOST
+ fifo_addr_ptr      0x0
+ fifo_tx_base_addr  0x80
+ fifo_rx_base_addr  0x0
+ fifo_rx_curr_addr  0x0
+ fifo_rx_byte_addr  0x0
+ status             {'rx_coding_rate': 0, 'modem_clear': 1, 'header_info_valid': 0, 'rx_ongoing': 0, 'signal_sync': 0, 'signal_detected': 0}
+ version            0x12
+
+[[95m2021-06-19 00:01:03.840371[0m] create websocket
+[93mLoRa -> RXCONT[0m
+[[95m2021-06-19 00:01:03.841984[0m] [94mcurrent active thread 4[0m
+[[95m2021-06-19 00:01:04.847038[0m] reconnecting[1]
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:01:06.109423[0m] on_sock_open
+[[95m2021-06-19 00:01:06.109478[0m] [92mconnected to server successfully[0m
+[93mLoRa -> SLEEP[0m
+[[95m2021-06-19 00:01:50.420594[0m] Exit
+[[95m2021-06-19 00:01:52.033691[0m] LoRaGateWay Start
+[[95m2021-06-19 00:01:52.454550[0m] start lora config
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> FSK_STDBY[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[[95m2021-06-19 00:01:52.543427[0m] SX127x LoRa registers:
+ modulation         1
+ mode               STDBY
+ freq               433.000000 MHz
+ coding_rate        CR4_5
+ bw                 BW62_5
+ spreading_factor   4096 chips/symb
+ implicit_hdr_mode  ON
+ rx_payload_crc     ON
+ tx_cont_mode       OFF
+ preamble           32
+ low_data_rate_opti ON
+ agc_auto_on        OFF
+ symb_timeout       100
+ freq_hop_period    0
+ hop_channel        {'pll_timeout': 0, 'crc_on_payload': 0, 'fhss_present_channel': 0}
+ payload_length     10
+ max_payload_length 255
+ irq_flags_mask     {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ irq_flags          {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ rx_nb_byte         0
+ rx_header_cnt      0
+ rx_packet_cnt      0
+ pkt_snr_value      64.000000
+ pkt_rssi_value     -164
+ rssi_value         -164
+ fei                0
+ pa_select          PA_BOOST
+ max_power          13.800000 dBm
+ output_power       13.800000 dBm
+ ocp                ON
+ ocp_trim           200.000000 mA
+ lna_gain           G1
+ lna_boost_lf       0b0
+ lna_boost_hf       0b0
+ detect_optimize    0x3
+ detection_thresh   0xa
+ sync_word          0x12
+ dio_mapping 0..5   [0, 0, 0, 0, 0, 0]
+ tcxo               XTAL
+ pa_dac             PA_BOOST
+ fifo_addr_ptr      0x0
+ fifo_tx_base_addr  0x80
+ fifo_rx_base_addr  0x0
+ fifo_rx_curr_addr  0x0
+ fifo_rx_byte_addr  0x0
+ status             {'rx_coding_rate': 0, 'modem_clear': 1, 'header_info_valid': 0, 'rx_ongoing': 0, 'signal_sync': 0, 'signal_detected': 0}
+ version            0x12
+
+[[95m2021-06-19 00:01:52.543496[0m] create websocket
+[93mLoRa -> RXCONT[0m
+[[95m2021-06-19 00:01:52.545162[0m] [94mcurrent active thread 4[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:01:53.555382[0m] reconnecting[1]
+[[95m2021-06-19 00:01:54.919286[0m] on_sock_open
+[[95m2021-06-19 00:01:54.919343[0m] [92mconnected to server successfully[0m
+[[95m2021-06-19 00:02:19.810717[0m] LoRaGateWay Start
+[[95m2021-06-19 00:02:20.232369[0m] start lora config
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> FSK_STDBY[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[[95m2021-06-19 00:02:20.331093[0m] SX127x LoRa registers:
+ modulation         1
+ mode               STDBY
+ freq               433.000000 MHz
+ coding_rate        CR4_5
+ bw                 BW62_5
+ spreading_factor   4096 chips/symb
+ implicit_hdr_mode  ON
+ rx_payload_crc     ON
+ tx_cont_mode       OFF
+ preamble           32
+ low_data_rate_opti ON
+ agc_auto_on        OFF
+ symb_timeout       100
+ freq_hop_period    0
+ hop_channel        {'pll_timeout': 0, 'crc_on_payload': 0, 'fhss_present_channel': 0}
+ payload_length     10
+ max_payload_length 255
+ irq_flags_mask     {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ irq_flags          {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ rx_nb_byte         0
+ rx_header_cnt      0
+ rx_packet_cnt      0
+ pkt_snr_value      64.000000
+ pkt_rssi_value     -164
+ rssi_value         -164
+ fei                0
+ pa_select          PA_BOOST
+ max_power          13.800000 dBm
+ output_power       13.800000 dBm
+ ocp                ON
+ ocp_trim           200.000000 mA
+ lna_gain           G1
+ lna_boost_lf       0b0
+ lna_boost_hf       0b0
+ detect_optimize    0x3
+ detection_thresh   0xa
+ sync_word          0x12
+ dio_mapping 0..5   [0, 0, 0, 0, 0, 0]
+ tcxo               XTAL
+ pa_dac             PA_BOOST
+ fifo_addr_ptr      0x0
+ fifo_tx_base_addr  0x80
+ fifo_rx_base_addr  0x0
+ fifo_rx_curr_addr  0x0
+ fifo_rx_byte_addr  0x0
+ status             {'rx_coding_rate': 0, 'modem_clear': 1, 'header_info_valid': 0, 'rx_ongoing': 0, 'signal_sync': 0, 'signal_detected': 0}
+ version            0x12
+
+[[95m2021-06-19 00:02:20.331169[0m] create websocket
+[93mLoRa -> RXCONT[0m
+[[95m2021-06-19 00:02:20.332769[0m] [94mcurrent active thread 4[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:02:21.337995[0m] reconnecting[1]
+[[95m2021-06-19 00:02:22.626343[0m] on_sock_open
+[[95m2021-06-19 00:02:22.626399[0m] [92mconnected to server successfully[0m
+[[95m2021-06-19 00:02:22.781850[0m] [91mthread_polling[0m
+[[95m2021-06-19 00:02:22.781926[0m] [91minvalid literal for int() with base 10: ''[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:02:23.793381[0m] [91mthread_polling[0m
+[[95m2021-06-19 00:02:23.793432[0m] [91minvalid literal for int() with base 10: ''[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:02:24.799779[0m] [91mthread_polling[0m
+[[95m2021-06-19 00:02:24.799831[0m] [91minvalid literal for int() with base 10: ''[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:02:25.806172[0m] [91mthread_polling[0m
+[[95m2021-06-19 00:02:25.806224[0m] [91minvalid literal for int() with base 10: ''[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:02:26.822743[0m] [91mthread_polling[0m
+[[95m2021-06-19 00:02:26.822796[0m] [91minvalid literal for int() with base 10: ''[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:02:27.839312[0m] [91mthread_polling[0m
+[[95m2021-06-19 00:02:27.839367[0m] [91minvalid literal for int() with base 10: ''[0m
+Enter node ID (18, 19, 20): 
+[93mLoRa -> SLEEP[0m
+[[95m2021-06-19 00:02:44.944574[0m] Exit
+[[95m2021-06-19 00:02:50.844571[0m] LoRaGateWay Start
+[[95m2021-06-19 00:02:51.265450[0m] start lora config
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> FSK_STDBY[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[[95m2021-06-19 00:02:51.363784[0m] SX127x LoRa registers:
+ modulation         1
+ mode               STDBY
+ freq               433.000000 MHz
+ coding_rate        CR4_5
+ bw                 BW62_5
+ spreading_factor   4096 chips/symb
+ implicit_hdr_mode  ON
+ rx_payload_crc     ON
+ tx_cont_mode       OFF
+ preamble           32
+ low_data_rate_opti ON
+ agc_auto_on        OFF
+ symb_timeout       100
+ freq_hop_period    0
+ hop_channel        {'pll_timeout': 0, 'crc_on_payload': 0, 'fhss_present_channel': 0}
+ payload_length     10
+ max_payload_length 255
+ irq_flags_mask     {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ irq_flags          {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ rx_nb_byte         0
+ rx_header_cnt      0
+ rx_packet_cnt      0
+ pkt_snr_value      64.000000
+ pkt_rssi_value     -164
+ rssi_value         -164
+ fei                0
+ pa_select          PA_BOOST
+ max_power          13.800000 dBm
+ output_power       13.800000 dBm
+ ocp                ON
+ ocp_trim           200.000000 mA
+ lna_gain           G1
+ lna_boost_lf       0b0
+ lna_boost_hf       0b0
+ detect_optimize    0x3
+ detection_thresh   0xa
+ sync_word          0x12
+ dio_mapping 0..5   [0, 0, 0, 0, 0, 0]
+ tcxo               XTAL
+ pa_dac             PA_BOOST
+ fifo_addr_ptr      0x0
+ fifo_tx_base_addr  0x80
+ fifo_rx_base_addr  0x0
+ fifo_rx_curr_addr  0x0
+ fifo_rx_byte_addr  0x0
+ status             {'rx_coding_rate': 0, 'modem_clear': 1, 'header_info_valid': 0, 'rx_ongoing': 0, 'signal_sync': 0, 'signal_detected': 0}
+ version            0x12
+
+[[95m2021-06-19 00:02:51.363858[0m] create websocket
+[93mLoRa -> RXCONT[0m
+[[95m2021-06-19 00:02:51.365845[0m] [94mcurrent active thread 4[0m
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:54:01.052461[0m] LoRaGateWay Start
+[[95m2021-06-19 00:54:01.473357[0m] start lora config
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> FSK_STDBY[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> SLEEP[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[93mLoRa -> STDBY[0m
+[[95m2021-06-19 00:54:01.561577[0m] SX127x LoRa registers:
+ modulation         1
+ mode               STDBY
+ freq               433.000000 MHz
+ coding_rate        CR4_5
+ bw                 BW62_5
+ spreading_factor   4096 chips/symb
+ implicit_hdr_mode  ON
+ rx_payload_crc     ON
+ tx_cont_mode       OFF
+ preamble           32
+ low_data_rate_opti ON
+ agc_auto_on        OFF
+ symb_timeout       100
+ freq_hop_period    0
+ hop_channel        {'pll_timeout': 0, 'crc_on_payload': 0, 'fhss_present_channel': 0}
+ payload_length     10
+ max_payload_length 255
+ irq_flags_mask     {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ irq_flags          {'rx_timeout': 0, 'rx_done': 0, 'crc_error': 0, 'valid_header': 0, 'tx_done': 0, 'cad_done': 0, 'fhss_change_ch': 0, 'cad_detected': 0}
+ rx_nb_byte         0
+ rx_header_cnt      0
+ rx_packet_cnt      0
+ pkt_snr_value      64.000000
+ pkt_rssi_value     -164
+ rssi_value         -164
+ fei                0
+ pa_select          PA_BOOST
+ max_power          13.800000 dBm
+ output_power       13.800000 dBm
+ ocp                ON
+ ocp_trim           200.000000 mA
+ lna_gain           G1
+ lna_boost_lf       0b0
+ lna_boost_hf       0b0
+ detect_optimize    0x3
+ detection_thresh   0xa
+ sync_word          0x12
+ dio_mapping 0..5   [0, 0, 0, 0, 0, 0]
+ tcxo               XTAL
+ pa_dac             PA_BOOST
+ fifo_addr_ptr      0x0
+ fifo_tx_base_addr  0x80
+ fifo_rx_base_addr  0x0
+ fifo_rx_curr_addr  0x0
+ fifo_rx_byte_addr  0x0
+ status             {'rx_coding_rate': 0, 'modem_clear': 1, 'header_info_valid': 0, 'rx_ongoing': 0, 'signal_sync': 0, 'signal_detected': 0}
+ version            0x12
+
+[[95m2021-06-19 00:54:01.561636[0m] create websocket
+[93mLoRa -> RXCONT[0m
+[[95m2021-06-19 00:54:01.563948[0m] [94mcurrent active thread 4[0m
+[[95m2021-06-19 00:54:02.568203[0m] reconnecting[1]
+Enter node ID (18, 19, 20): 
+[[95m2021-06-19 00:54:03.797810[0m] on_sock_open
+[[95m2021-06-19 00:54:03.797880[0m] [92mconnected to server successfully[0m

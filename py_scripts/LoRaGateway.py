@@ -10,10 +10,10 @@ import requests
 from websocket import create_connection
 import websocket
 import threading
-import queue
 import json
+import queue
 
-# SERVER_URL = 'ws://localhost:3000'
+# SERVER_URL = 'ws://localhost:3000/'
 SERVER_URL = 'wss://datn-loraserver.herokuapp.com/pi'
 GATEWAY_ID = MSG.NODE_ID.GATEWAY
 
@@ -92,6 +92,7 @@ class mylora(LoRa):
         self.set_fifo_rx_base_addr(0x00)
         pi_log_v(self.__str__())
 
+    ''' ANCHOR: Got socket message '''
     def on_message(self, ws, stringifyJson):
         # if msg.find('pong') > -1:
         #     pass
@@ -106,6 +107,7 @@ class mylora(LoRa):
         # loraMsg[MSG.INDEX.HEADER_SEQUENCE_ID] = int(msg['sequenceID'])
         # if msg['status'].upper() == 'ON':
         loraMsg[MSG.INDEX.DATA_RELAY_STATE] = MSG.DATA.RELAY.ON if msg['status'].upper() == 'ON' else MSG.DATA.RELAY.OFF
+        loraMsg[MSG.INDEX.HEADER_TIME_TO_LIVE] = 0
         # elif msg['status'].upper() == 'OFF':
         #     loraMsg[MSG.INDEX.DATA_RELAY_STATE] = MSG.DATA.RELAY.OFF
         self.transmit(loraMsg)
@@ -148,6 +150,7 @@ class mylora(LoRa):
             pi_log_e('send socket failed')
             time.sleep(1)
 
+    ''' ANCHOR Got LoRa message '''
     def on_rx_done(self):
 
         rxMsg = [None] * 10
@@ -202,7 +205,6 @@ class mylora(LoRa):
                     txMsg[MSG.INDEX.HEADER_MSG_TYPE] = MSG.HEADER.TYPE.REQUEST
                     txMsg[MSG.INDEX.HEADER_MSG_STATUS] = MSG.HEADER.STATUS.NONE
                     txMsg[MSG.INDEX.DATA_ERR_CODE] = MSG.DATA.ERR_CODE.NONE
-                    txMsg[MSG.INDEX.RESET_CAUSE] = MSG.DATA.RESET_CAUSE.UNKNOWN
                     txMsg[MSG.INDEX.DATA_LOCATION] = MSG.DATA.LOCATION.UNKNOWN
                     txMsg[MSG.INDEX.DATA_RELAY_STATE] = MSG.DATA.RELAY.NONE
 
@@ -210,7 +212,7 @@ class mylora(LoRa):
                         input("Enter node ID (18, 19, 20): \n"))
 
                     opcode = int(input(
-                        "Enter opcode (notif: 1 - relay control: 2 - mcu reset: 3 - location update: 4 - update mesh ID: 5): \n"))
+                        "Enter opcode (notif: 1 - relay control: 2 - mcu reset: 3 - location update: 4 - update friend ID: 5): \n"))
                     txMsg[MSG.INDEX.COMMAND_OPCODE] = opcode
                     if opcode == MSG.COMMAND.OPCODE.REQUEST_RELAY_CONTROL:
                         txMsg[MSG.INDEX.DATA_RELAY_STATE] = int(
@@ -218,11 +220,14 @@ class mylora(LoRa):
                     elif opcode == MSG.COMMAND.OPCODE.REQUEST_LOCATION_UPDATE:
                         txMsg[MSG.INDEX.DATA_LOCATION] = int(
                             input("Enter new location: \n"))
-                    elif opcode == MSG.COMMAND.OPCODE.REQUEST_MESH_NODE_ID_UPDATE:
-                        txMsg[MSG.INDEX.DATA_MESH_NODE_ID] = int(
-                            input("Enter new mesh ID: \n"))
+                    elif opcode == MSG.COMMAND.OPCODE.REQUEST_FRIEND_NODE_ID_UPDATE:
+                        txMsg[MSG.INDEX.DATA_FRIEND_NODE_ID] = int(
+                            input("Enter new friend ID: \n"))
                     else:
                         pass
+
+                    ttl = int(input("Enter msg ttl (0-20): \n"))
+                    txMsg[MSG.INDEX.HEADER_TIME_TO_LIVE] = ttl
 
                     lora.transmit(txMsg)
                 except Exception as e:
@@ -236,9 +241,9 @@ class mylora(LoRa):
         payload = [
             raw_msg[MSG.INDEX.HEADER_SOURCE_ID],
             raw_msg[MSG.INDEX.HEADER_DEST_ID],
-            MSG.HEADER.TYPE.lookup[raw_msg[MSG.INDEX.HEADER_MSG_TYPE]],
+            raw_msg[MSG.INDEX.HEADER_MSG_TYPE],
             # raw_msg[MSG.INDEX.HEADER_MSG_STATUS],
-            MSG.HEADER.STATUS.lookup[raw_msg[MSG.INDEX.HEADER_MSG_STATUS]],
+            raw_msg[MSG.INDEX.HEADER_MSG_STATUS],
             raw_msg[MSG.INDEX.HEADER_SEQUENCE_ID],
             MSG.DATA.LOCATION.lookup[raw_msg[MSG.INDEX.DATA_LOCATION]],
             MSG.DATA.RELAY.lookup[raw_msg[MSG.INDEX.DATA_RELAY_STATE]],

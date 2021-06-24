@@ -22,12 +22,13 @@ class MSG:
         HEADER_MSG_STATUS = 3
         HEADER_SEQUENCE_ID = 4
         DATA_LOCATION = 5
-        DATA_MESH_NODE_ID = 5
+        DATA_FRIEND_NODE_ID = 5
         DATA_RELAY_STATE = 6
         DATA_ERR_CODE = 7
         COMMAND_OPCODE = 8
         RESET_CAUSE = 9
         PACKET_RSSI = 9
+        HEADER_TIME_TO_LIVE = 9
         MAX = 10
 
     @add_lookup
@@ -37,6 +38,8 @@ class MSG:
         NODE_2 = 0x13
         NODE_3 = 0x14
         NODE_4 = 0x15
+        UNUSED = 0xEE
+        BROADCAST = 0xBB
 
     @add_lookup
     class HEADER:
@@ -114,8 +117,12 @@ class MSG:
             RESPOSNE_MCU_RESET = REQUEST_MCU_RESET + 100
             REQUEST_LOCATION_UPDATE = 4
             RESPOSNE_LOCATION_UPDATE = REQUEST_LOCATION_UPDATE + 100
-            REQUEST_MESH_NODE_ID_UPDATE = 5
-            RESPONSE_MESH_NODE_ID_UPDATE = REQUEST_LOCATION_UPDATE + 100
+            REQUEST_FRIEND_NODE_ID_UPDATE = 5
+            RESPONSE_FRIEND_NODE_ID_UPDATE = REQUEST_LOCATION_UPDATE + 100
+
+    class TTL:
+        TTL_NONE = 0
+        TTL_MAX = 20
 
 REQUEST_PROTOTYPE = [
     MSG.NODE_ID.GATEWAY,
